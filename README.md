@@ -19,10 +19,10 @@ Key Findings:
 - Identified neighborhoods with highest average EBRS (e.g., Roslindale, Mattapan)
 - Low-income areas more likely to have building characteristics leading to larger energy burdens
 
-![EBRS Distribution Map](images/ebrs_distribution_map_bg.png)
+![EBRS Distribution Map](/assets/img/ebrs_distribution_map_bg.png)
 *Map of EBRS distribution across Boston block groups*
 
-![EBRS Distribution Map 2](images/ebrs_distribution_map_5.png)
+![EBRS Distribution Map 2](/assets/img/ebrs_distribution_map_5.png)
 *Map of EBRS distribution across Boston (scores above 0.5)*
 
 ## Energy Burden in Boston: A Geospatial Analysis of Residential Energy Consumption and Affordability
@@ -35,10 +35,10 @@ Key Findings:
 - Strong correlations between energy burden and socio-economic indicators
 - Mapped areas with highest uptake of new energy technologies (e.g., heat pumps)
 
-![Energy Burden and Income Map](images/energy_burden_income_map.png)
+![Energy Burden and Income Map](/assets/img/energy_burden_income_map.png)
 *Bivariate choropleth map of energy burden and high-income residents*
 
-![Heat Pumps Map](images/heat_pumps.jpg)
+![Heat Pumps Map](/assets/img/heat_pumps.jpg)
 *Density of heat pump projects*
 
 ## Beyond the Burden: Pathways to Urban Resilience in the Energy Crisis of Massachusetts
@@ -52,5 +52,5 @@ Key Findings:
 - Low-income and minority communities most affected
 - Strong correlations between energy burden and various socioeconomic factors
 
-![Energy Burden Evolution](images/burden_change.gif)
+![Energy Burden Evolution](/assets/img/burden_change.gif)
 *Annual estimated energy burdens across Massachusetts census tracts (2017-2022)*
