@@ -8,6 +8,8 @@ Through my academic projects and professional work, I focus on improving energy 
 
 Check out my resume [here](https://github.com/user-attachments/files/17281382/Baker.Resume.pdf) and some of my projects below. 
 
+# Energy Burden Projects
+
 ## Estimating Energy Burden Risk in Boston via Property Characteristics
 *December 2022*
 [View Full Project Details](project1.md)
