@@ -10,7 +10,7 @@ Check out some of my projects below.
 
 ## Estimating Energy Burden Risk in Boston via Property Characteristics
 *December 2022*
-
+[View Full Project Details](project1.md)
 ### Question
 How can areas in Boston potentially facing energy burden be predicted based on the characteristics of their housing?
 
@@ -34,11 +34,11 @@ How can areas in Boston potentially facing energy burden be predicted based on t
 ![EBRS Distribution Map 2](/assets/img/ebrs_distribution_map_5.png)
 *Map of EBRS distribution across Boston (scores above 0.5)*
 
-[View Full Project Details](project1.md)
+
 
 ## Energy Burden in Boston: A Geospatial Analysis of Residential Energy Consumption and Affordability
 *April 2023*
-
+[View Full Project Details](project2.md)
 ### Question
 How can areas in Boston/MA with the highest opportunity for additional or increased energy efficiency programs be identified? (in order to alleviate estimated energy burdens)
 
@@ -62,11 +62,11 @@ How can areas in Boston/MA with the highest opportunity for additional or increa
 ![Heat Pumps Map](/assets/img/heat_pumps.jpg)
 *Density of heat pump projects*
 
-[View Full Project Details](project2.md)
+
 
 ## Beyond the Burden: Pathways to Urban Resilience in the Energy Crisis of Massachusetts
 *April 2024*
-
+[View Full Project Details](project3.md)
 ### Questions
 - How have energy burdens in Massachusetts evolved from 2017-2022?
 - What are the correlations between energy burdens and socioeconomic and demographic indicators?
@@ -88,7 +88,7 @@ How can areas in Boston/MA with the highest opportunity for additional or increa
 ![Energy Burden Evolution](/assets/img/burden_change.gif)
 *Annual estimated energy burdens across Massachusetts census tracts (2017-2022)*
 
-[View Full Project Details](project3.md)
+
 
 
 ## The Value and Challenges of LEED's Advanced Energy Metering Credit
