@@ -20,9 +20,31 @@ _Year Score (YR_SCORE)_
 
 Older buildings are more likely to leak energy than newer construction. This is primarily due to changes in wall and attic insulation technology over time, heating input, exterior cladding, as well as accumulated wear and tear. Remodeling older buildings, replacing boilers, recladding exteriors, and replacing roofs, can reduce energy leakage. Therefore, the year score takes the dataset’s field for construction year, YR_BUILT, and the field for year remodeled, YR_REMODEL, and averages them – with 60% weight to year built, 40% to year remodeled. The YR_SCORE weights construction year more heavily due to the lack of detail in the dataset on the type of remodel that took place – remodeling could mean many different types of projects, some of which might have limited impacts on energy envelope. If no remodel year is present, the year score takes the year-built field alone. The scores were assigned per Table 2.
 
+| Table 2           |                  |
+|-------------------|-----------------|
+| **Year Built/Remodeled**     | **Score**           |
+| <1939           | 5               |
+| 1940-1959   | 4               |
+| 1960-1979        | 3               |  
+| 1980-1999                | 2              |
+| 2000-2021                | 1              |
+| NA                | NA              |
+
 _Overall Property Condition Score (COND_SCORE)_
 
 A property’s condition will also have a large impact on energy leakage. Poorly maintained or inefficient homes will use more energy and generate higher energy bills than a home of the same size that is better maintained. Households experiencing energy burden are also more likely to live in poorly maintained homes for two critical reasons 1) they are less expensive to rent or purchase and 2) low-income households have less income flexibility and fewer liquid assets to invest in energy efficiency upgrades and general upkeep, even if it results in larger aggregate energy bill savings. The scores were assigned per Table 3.
+
+| Table 3           |                  |
+|-------------------|-----------------|
+| **Overall Condition**     | **Score**           |
+| Unsound           | 5               |
+|Poor   | 5               |
+| Average        | 4               |  
+| Fair                | 3              |
+| Good                | 2              |
+| Very Good                | 1              |
+| Excellent                | 1              |
+| NA                | NA              |
 
 _Roof Score (ROOF_SCORE)_
 
@@ -31,6 +53,20 @@ Asphalt shingles, also known as composition or composite shingles, are the most 
 Wood shingles are more expensive to maintain, and if not replaced, can increase energy leakage in the wintertime. They are not resilient to storms and are not as watertight as newer materials.
 Slate and tile materials are generally more expensive to install than composite traditional shingles, but are more resilient to wind and rain, require less maintenance, and are usually lighter in color, increasing their solar reflectively, decreasing their risk for contributing to higher energy burden.
 Rubber roof materials are a newer product. This material has a high reflective property, assisting in summer cooling, and creates a secure, watertight seal on a rooftop, which can reduce heat leakage in the winter months, or due to storm conditions. The properties with rubber roofs were assigned the score with least contribution to energy burden.
+
+
+| Table 4           |                  |
+|-------------------|-----------------|
+| **Roof Type**     | **Score**           |
+| Asphalt           | 4               |
+| Composite                | 4              |
+| Wood                | 3              |
+| Slate                | 2              |
+| Tile                | 2              |
+| Rubber                | 1              |
+| Other                | NA              |
+| NA                | NA              |
+
 
 _Measure Calculation_
 
