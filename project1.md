@@ -53,7 +53,7 @@ The Boston Area Research Initiative (BARI) compiles, cleans, and makes available
 
 ## Statistical Analysis
 
-After establishing the metric and aggregating median/average EBRS to the Block group and Census tract levels, the results of its distribution across the City are visible. Data are available at all levels but displayed in this section exclusively at the block group level due to the similarity of results. Please see further sections for interpretation at the block group and neighborhood level.
+After establishing the metric and aggregating median/average EBRS to the Block group and Census tract levels, the results of its distribution across the City are visible. Data are available at all levels but displayed in this section exclusively at the block group level due to the similarity of results.
 
 ### i. Distribution at Census Block Group Level
 Figure 1
