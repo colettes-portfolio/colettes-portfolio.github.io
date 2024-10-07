@@ -6,7 +6,7 @@ I am currently completing my MS in Urban Informatics at Northeastern University,
 
 Through my academic projects and professional work, I focus on improving energy systems and building infrastructure, as well as analyzing the efficacy and impacts of carbon and energy regulations on building owners and residents. I'm passionate about leveraging data science and urban informatics to address challenges in energy affordability, community resiliency, and climate change adaptation in MA. 
 
-Check out some of my projects below. 
+Check out my resume [here](https://github.com/user-attachments/files/17281382/Baker.Resume.pdf) and some of my projects below. 
 
 ## Estimating Energy Burden Risk in Boston via Property Characteristics
 *December 2022*
