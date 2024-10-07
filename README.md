@@ -8,8 +8,8 @@ I am currently completing my MS in Urban Informatics at Northeastern University,
 Through my projects and professional role, I focus on improving energy systems and building infrastructure, as well as the new policies that attempt to regulate existing and new construction buildings, their owners, and their emissions. I'm passionate about leveraging data science and urban informatics to address critical challenges in energy affordability, sustainable building practices, and climate change adaptation. My approach combines quantitative analysis with an understanding of urban systems and green building strategies, aiming to contribute to more equitable, sustainable, and resilient cities and institutions.
 
 Here you'll find a selection of projects that demonstrate my skills in geospatial analysis, statistical modeling, and research on energy burdens, while also highlighting the interconnections between energy systems, housing, and urban resilience. 
-
-## Estimating Energy Burden Risk in Boston via Property Characteristics
+#MS Portfolio
+### Estimating Energy Burden Risk in Boston via Property Characteristics
 *December 2022*
 
 Used 2021 City of Boston's Property Assessment dataset to predict areas experiencing elevated energy burden.
@@ -25,7 +25,7 @@ Key Findings:
 ![EBRS Distribution Map 2](/assets/img/ebrs_distribution_map_5.png)
 *Map of EBRS distribution across Boston (scores above 0.5)*
 
-## Energy Burden in Boston: A Geospatial Analysis of Residential Energy Consumption and Affordability
+### Energy Burden in Boston: A Geospatial Analysis of Residential Energy Consumption and Affordability
 *April 2023*
 
 Geospatial analysis to identify areas needing increased energy efficiency programs.
@@ -41,7 +41,7 @@ Key Findings:
 ![Heat Pumps Map](/assets/img/heat_pumps.jpg)
 *Density of heat pump projects*
 
-## Beyond the Burden: Pathways to Urban Resilience in the Energy Crisis of Massachusetts
+### Beyond the Burden: Pathways to Urban Resilience in the Energy Crisis of Massachusetts
 *April 2024*
 
 
