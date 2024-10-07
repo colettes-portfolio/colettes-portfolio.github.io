@@ -34,28 +34,10 @@ The broad array of detailed information like land use type, location, and inform
 
 ### ii. Latent Variable Construction
 
-Energy Burden Risk Score (EBRS) is calculated at the record level by:
+Energy Burden Risk Score (EBRS) is a latent variable, calculated at the record levek by combining several variables. Learn more about how I calculated this variable by visiting a detailed page on its construction: 
 
-$$EBRS = \frac{AC\ Score + Year\ Score + Condition\ Score + Roof\ Score}{Maximum\ Possible\ Score}$$
 
-Because some properties may have one or more of the manifest fields blank, to establish a like-for-like comparison, property energy burden risk is expressed as a ratio between the total assigned risk score for non-blank manifest fields out of the total possible points achievable for that property; the maximum possible burden. For example, in the instance that a property was assigned a Year Score of 4, Property Condition Score of 3, and Roofing Score of 2, but the AC field is null, the equation for this property's property energy burden risk score is calculated as:
-
-$$EBRS = \frac{0 + 4 + 3 + 2}{0 + 5 + 5 + 4} = \frac{9}{14} = 0.643$$
-
-Table 1: Manifest Variable Weights
-
-| Manifest Variable | Max % of Burden |
-|-------------------|-----------------|
-| AC Score          | 6.66%           |
-| Year Score        | 33.3%           |
-| Condition Score   | 26.6%           |
-| Roof Score        | 33.3%           |
-
-The maximum achievable number of points, if all fields are not null, representing where a property has characteristics of largest risk of property energy burden, is 15 points.
-
-Due to their anticipated differences in impact to energy intensity at the property level, the manifest variables are not weighted equally in terms of increasing energy burden risk. If all fields are not null, their proportion of the burden is visible in Table 1. In addition, only properties with at least two non-blank manifest fields were assigned EBRSs, to avoid calculating burdens based on incomplete information.
-
-After EBRS was calculated at the record level for each property that met this two-variable requirement, average EBRSs were aggregated to both the block group and Census tract level to allow for broader examination with external datasets. Only block groups and census tracts with greater than three observations of EBRS were maintained in the dataset. This excluded several areas in the City, primarily areas with large parks, cemeteries, or golf courses -- like the Arnold Arboretum, Franklin Park, the Boston Common, and Mt. Hope Cemetery.
+After EBRS was calculated at the record level, average EBRSs were aggregated to both the block group and Census tract level to allow for broader examination with external datasets. Only block groups and census tracts with greater than three observations of EBRS were maintained in the dataset. This excluded several areas in the City, primarily areas with large parks, cemeteries, or golf courses -- like the Arnold Arboretum, Franklin Park, the Boston Common, and Mt. Hope Cemetery.
 
 ### iii. External Data
 
