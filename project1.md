@@ -34,9 +34,9 @@ The broad array of detailed information like land use type, location, and inform
 
 ### ii. Latent Variable Construction
 
-Energy Burden Risk Score (EBRS) is a latent variable, calculated at the record levek by combining several variables. Learn more about how I calculated this variable by visiting a detailed page on its construction: 
+Energy Burden Risk Score (EBRS) is a latent variable, calculated at the record levek by combining several variables. Learn more about how I calculated this variable by visiting a more detailed page on its construction and background on the logic: 
 
-
+[View Variable Construction](project1_ebrs.md)
 After EBRS was calculated at the record level, average EBRSs were aggregated to both the block group and Census tract level to allow for broader examination with external datasets. Only block groups and census tracts with greater than three observations of EBRS were maintained in the dataset. This excluded several areas in the City, primarily areas with large parks, cemeteries, or golf courses -- like the Arnold Arboretum, Franklin Park, the Boston Common, and Mt. Hope Cemetery.
 
 ### iii. External Data
