@@ -76,6 +76,7 @@ After establishing the metric and aggregating median/average EBRS to the Block g
 ### i. Distribution at Census Block Group Level
 Figure 1 & Figure 2
 ![image](https://github.com/user-attachments/assets/d6f1d179-b513-453f-a573-16a2fe1f3acb)
+<img src="https://github.com/user-attachments/assets/d6f1d179-b513-453f-a573-16a2fe1f3acb" width=50% height=50%>
 
 
 Table 2: Summary Statistics of Average EBRS by Block Group
