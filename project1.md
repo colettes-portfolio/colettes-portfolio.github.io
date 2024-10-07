@@ -74,14 +74,13 @@ The Boston Area Research Initiative (BARI) compiles, cleans, and makes available
 After establishing the metric and aggregating median/average EBRS to the Block group and Census tract levels, the results of its distribution across the City are visible. Data are available at all levels but displayed in this section exclusively at the block group level due to the similarity of results. Please see further sections for interpretation at the block group and neighborhood level.
 
 ### i. Distribution at Census Block Group Level
-Figure 1 & Figure 2
-![image](https://github.com/user-attachments/assets/d6f1d179-b513-453f-a573-16a2fe1f3acb)
-<img src="https://github.com/user-attachments/assets/d6f1d179-b513-453f-a573-16a2fe1f3acb" width=50% height=50%>
-
+Figure 1
+<img src="https://github.com/user-attachments/assets/d6f1d179-b513-453f-a573-16a2fe1f3acb" align="left" hspace="50" vspace="50" width="50%" height="50%">
 
 Table 2: Summary Statistics of Average EBRS by Block Group
+<img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" align="left" hspace="50" vspace="50" width="20%" height="20%">
 
-![image](https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587)
+
 
 
 Table 2 shows the summary statistics of average EBRS by block group. The block group with the highest average Energy Burden Risk Score is in Lower Allston, bound by Interstate-90 and Soldiers Field Road, with 0.8969. The next highest burdens are location in Brighton's Oak Square, then in Franklin Field South, in Mattapan (0.89, 0.87, respectively). The properties that make up these areas have high proportions of single-four family homes, with fewer condominiums and large apartment buildings than areas closer to the center of Boston, which have the lowest average EBRSs. The lowest burdens are in East Boston, near LoPresti Park (0.25), in Back Bay by the Boston Public Library (0.36), as well as in the Seaport (0.42). Most properties in these three block groups are large apartment buildings or condominium units, and in Back Bay and the Seaport, there are no R1-R4 homes.
@@ -95,8 +94,7 @@ Mapping all scores, Figure 1, shows that there are some block groups whose score
 ### ii. Average EBRS -- By Neighborhood
 
 Table 3: Average EBRS by Neighborhood
-![image](https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48)
-
+<img src = "https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48" width=50% height=50%>
 
 Though neighborhood-level EBRS aggregates were not used in statistical analysis, as block group level analysis has greater specificity and accuracy, Table 3 displays Average EBRS at the neighborhood level for legibility purposes. At the neighborhood level, the highest EBRSs are in Roslindale and Mattapan. These block groups have some of the highest concentrations of energy inefficient properties, mainly older R1-R4 homes. The neighborhoods with lowest EBRSs are in South Boston and in Central (Downtown) Boston.
 
@@ -104,7 +102,7 @@ Though neighborhood-level EBRS aggregates were not used in statistical analysis,
 
 Table 4: Correlation Coefficients
 
-![image](https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560)
+<img src = "https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560" width=50% height=50%>
 
 To investigate these distributions further, Pearson's r, correlation, was used to measure the strength of the relationships (effect size) between EBRS and demographic variables from ACS data, as well as energy consumption per household statistics from Mass Save. See Table 4.
 
@@ -126,13 +124,16 @@ Some of the strongest negative correlations with EBRS, where increases in EBRS a
 
 Given the strength of the EBRS's relationship with gas consumption (*thermsperhh*), it formed the basis of bivariate regression analysis, then multiple regression analysis. Running a regression on the two variables, with EBRS as the dependent variable and therms per household as independent shows that 21% of the variability in average EBRS can be explained by household energy consumption. Figure 3 shows the linear regression plot between average burden and therms consumed per household at the block group level.
 Figure 3
-![image](https://github.com/user-attachments/assets/4d0daaf9-ac20-43b8-8db4-cbc3537673b5)
+
+<img src = "https://github.com/user-attachments/assets/4d0daaf9-ac20-43b8-8db4-cbc3537673b5" width=50% height=50%>
+
 
 ### v. Multiple Regression
 
 Table 6: Multiple Regression Results
 
-![image](https://github.com/user-attachments/assets/c6ea4905-1694-4b46-b5e7-b7f5bc44c67b)
+<img src = "https://github.com/user-attachments/assets/c6ea4905-1694-4b46-b5e7-b7f5bc44c67b" width=50% height=50%>
+
 
 Multiple regression testing was conducted, adding one after another the most strongly correlated and statistically significant variables to the bivariate regression of EBRS with therms per household, to generate the most effective model. Variables suspected to be highly collinear with one another, such as multiple variables for maximum educational attainment, were not duplicated in the multiple regression, to avoid multicollinearity and overfitting the model. The strongest multiple regression is in Table 6.
 
