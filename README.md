@@ -90,5 +90,3 @@ How can areas in Boston/MA with the highest opportunity for additional or increa
 
 
 
-
-## The Value and Challenges of LEED's Advanced Energy Metering Credit
