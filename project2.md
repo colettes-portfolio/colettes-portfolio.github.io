@@ -1,7 +1,4 @@
----
-layout: default
-title: Energy Burden in Boston: A Geospatial Analysis
----
+
 # Introduction
 Energy burden, the inability to afford utility costs, disproportionately affects low-income households. This study examines the spatial distribution of energy burden in Boston, considering factors such as housing quality, energy efficiency, and socioeconomic indicators.
 # Data & Methods
