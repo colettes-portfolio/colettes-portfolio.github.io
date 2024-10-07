@@ -56,39 +56,30 @@ The Boston Area Research Initiative (BARI) compiles, cleans, and makes available
 After establishing the metric and aggregating median/average EBRS to the Block group and Census tract levels, the results of its distribution across the City are visible. Data are available at all levels but displayed in this section exclusively at the block group level due to the similarity of results.
 
 ### i. Distribution at Census Block Group Level
-Figure 1
-<img src="https://github.com/user-attachments/assets/d6f1d179-b513-453f-a573-16a2fe1f3acb" align="left" hspace="50" vspace="50" width="50%" height="50%">
+<p>The below table shows the summary statistics of average EBRS by block group. The block group with the highest average Energy Burden Risk Score is in Lower Allston, bound by Interstate-90 and Soldiers Field Road, with 0.8969. The next highest burdens are location in Brighton's Oak Square, then in Franklin Field South, in Mattapan (0.89, 0.87, respectively). The properties that make up these areas have high proportions of single-four family homes, with fewer condominiums and large apartment buildings than areas closer to the center of Boston, which have the lowest average EBRSs. The lowest burdens are in East Boston, near LoPresti Park (0.25), in Back Bay by the Boston Public Library (0.36), as well as in the Seaport (0.42). Most properties in these three block groups are large apartment buildings or condominium units, and in Back Bay and the Seaport, there are no R1-R4 homes.</p>
 
-Table 2: Summary Statistics of Average EBRS by Block Group
-<img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" align="left" hspace="50" vspace="50" width="20%" height="20%">
+<img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" alt="Table 2: Summary Statistics of Average EBRS by Block Group" title="Table 2: Summary Statistics of Average EBRS by Block Group" align="left" hspace="50" vspace="50" width="15%" height="15%">
 
+<p>The summary statistics show that 50% of Census tracts have an average score of less than 0.76, but given the long-left tail, these scores in the lower left tail have a large range. The lower 50% of burden scores are more concentrated closer to the city, in Back Bay, Downtown, and South Boston.</p>
 
+<p>In the upper 50% of scores, these census tracts have a shorter range, and are more concentrated, particularly clustered in value between .76-.80.</p>
 
-
-Table 2 shows the summary statistics of average EBRS by block group. The block group with the highest average Energy Burden Risk Score is in Lower Allston, bound by Interstate-90 and Soldiers Field Road, with 0.8969. The next highest burdens are location in Brighton's Oak Square, then in Franklin Field South, in Mattapan (0.89, 0.87, respectively). The properties that make up these areas have high proportions of single-four family homes, with fewer condominiums and large apartment buildings than areas closer to the center of Boston, which have the lowest average EBRSs. The lowest burdens are in East Boston, near LoPresti Park (0.25), in Back Bay by the Boston Public Library (0.36), as well as in the Seaport (0.42). Most properties in these three block groups are large apartment buildings or condominium units, and in Back Bay and the Seaport, there are no R1-R4 homes.
-
-The summary statistics show that 50% of Census tracts have an average score of less than 0.76, but given the long-left tail, these scores in the lower left tail have a large range. The lower 50% of burden scores are more concentrated closer to the city, in Back Bay, Downtown, and South Boston.
-
-In the upper 50% of scores, these census tracts have a shorter range, and are more concentrated, particularly clustered in value between .76-.80.
-
-Mapping all scores, Figure 1, shows that there are some block groups whose scores are so low that they skew the visual analysis, as seen in the brightest spots in Figure 1. Limiting the map to display scores exclusively above 0.5, in Figure 2, reveals additional variability in its distribution across the city. Some of the highest burdens are clearly clustered in Allston, Hyde Park, South Dorchester, and Mattapan. It appears that moving away from the City's center tends to increase the EBRS, though immediately at the edges of the City limits, such as in the Roslindale and Brighton areas tend to have slightly lower EBRSs than those slightly more central to the City.
+<p> Mapping all scores, Figure 1, shows that there are some block groups whose scores are so low that they skew the visual analysis, as seen in the brightest spots in Figure 1. Limiting the map to display scores exclusively above 0.5, in Figure 2, reveals additional variability in its distribution across the city. Some of the highest burdens are clearly clustered in Allston, Hyde Park, South Dorchester, and Mattapan. It appears that moving away from the City's center tends to increase the EBRS, though immediately at the edges of the City limits, such as in the Roslindale and Brighton areas tend to have slightly lower EBRSs than those slightly more central to the City.</p>
+<p>
+<img src="https://github.com/user-attachments/assets/10b03c85-3c6a-4cfa-9798-165c70773111" width="85%" height="85%"></p>
 
 ### ii. Average EBRS -- By Neighborhood
+<p> Though neighborhood-level EBRS aggregates were not used in statistical analysis, as block group level analysis has greater specificity and accuracy, Table 3 displays Average EBRS at the neighborhood level for legibility purposes. At the neighborhood level, the highest EBRSs are in Roslindale and Mattapan. These block groups have some of the highest concentrations of energy inefficient properties, mainly older R1-R4 homes. The neighborhoods with lowest EBRSs are in South Boston and in Central (Downtown) Boston.</p>
+<img src = "https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48" width=25% height=25%>
 
-Table 3: Average EBRS by Neighborhood
-<img src = "https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48" width=50% height=50%>
 
-Though neighborhood-level EBRS aggregates were not used in statistical analysis, as block group level analysis has greater specificity and accuracy, Table 3 displays Average EBRS at the neighborhood level for legibility purposes. At the neighborhood level, the highest EBRSs are in Roslindale and Mattapan. These block groups have some of the highest concentrations of energy inefficient properties, mainly older R1-R4 homes. The neighborhoods with lowest EBRSs are in South Boston and in Central (Downtown) Boston.
 
 ### iii. Correlations and Significance
+<p>To investigate these distributions further, Pearson's r, correlation, was used to measure the strength of the relationships (effect size) between EBRS and demographic variables from ACS data, as well as energy consumption per household statistics from Mass Save. See Table 4.</p>
 
-Table 4: Correlation Coefficients
+<img src = "https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560" width=25% height=25%>
 
-<img src = "https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560" width=50% height=50%>
-
-To investigate these distributions further, Pearson's r, correlation, was used to measure the strength of the relationships (effect size) between EBRS and demographic variables from ACS data, as well as energy consumption per household statistics from Mass Save. See Table 4.
-
-Some of the strongest statistically significant positive correlations, where increases in EBRS are associated with increases in the independent variables, are:
+<p>Some of the strongest statistically significant positive correlations, where increases in EBRS are associated with increases in the independent variables, are:
 
 - Natural gas usage per household (therms)
 - Proportion of buildings with less than five units
@@ -100,7 +91,7 @@ Some of the strongest negative correlations with EBRS, where increases in EBRS a
 
 - Median home value
 - Proportion of residents who have completed a professional degree
-- Median Home Value
+- Median Home Value</p>
 
 ### iv. Bivariate Regression
 
