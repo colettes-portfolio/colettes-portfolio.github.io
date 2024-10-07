@@ -4,7 +4,7 @@ A significant part of my work involves conducting in-depth energy savings analys
 
 I am currently completing my MS in Urban Informatics at Northeastern University, where I developed a strong focus on exploring the concept of energy burden—the percentage of household income spent on energy costs—and its implications for urban resilience, particularly in Massachusetts and in the City of Boston.
 
-Through my academic projects and professional work, I focus on improving energy systems and building infrastructure, as well as analyzing the efficacy and impacts of regulations on existing buildings and new construction, their owners, and their emissions. I'm passionate about leveraging data science and urban informatics to address challenges in energy affordability, community resiliency, and climate change adaptation in MA. 
+Through my academic projects and professional work, I focus on improving energy systems and building infrastructure, as well as analyzing the efficacy and impacts of carbon and energy regulations on building owners and residents. I'm passionate about leveraging data science and urban informatics to address challenges in energy affordability, community resiliency, and climate change adaptation in MA. 
 
 Check out some of my projects below. 
 
