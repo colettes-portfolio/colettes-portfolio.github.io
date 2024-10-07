@@ -8,7 +8,9 @@ I am currently completing my MS in Urban Informatics at Northeastern University,
 Through my projects and professional role, I focus on improving energy systems and building infrastructure, as well as the new policies that attempt to regulate existing and new construction buildings, their owners, and their emissions. I'm passionate about leveraging data science and urban informatics to address critical challenges in energy affordability, sustainable building practices, and climate change adaptation. My approach combines quantitative analysis with an understanding of urban systems and green building strategies, aiming to contribute to more equitable, sustainable, and resilient cities and institutions.
 
 Here you'll find a selection of projects that demonstrate my skills in geospatial analysis, statistical modeling, and research on energy burdens, while also highlighting the interconnections between energy systems, housing, and urban resilience. 
-#MS Portfolio
+
+# MS Portfolio
+
 ### Estimating Energy Burden Risk in Boston via Property Characteristics
 *December 2022*
 
