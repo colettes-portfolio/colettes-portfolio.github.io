@@ -50,12 +50,12 @@ _For more details on the methodology I used, please reach out for the full paper
 
 The results of the statistical analysis show that average energy costs and energy burden for many MA residents increased overall from 2017-2022, with residents shifting from one energy burden group to another. 
 
-<img src="https://github.com/user-attachments/assets/877fd74f-91fc-4a6d-8e91-a9326ff3ac03" alt="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" title="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" align="center" hspace="60" vspace="60" width="60%" height="60%">
+<img src="https://github.com/user-attachments/assets/877fd74f-91fc-4a6d-8e91-a9326ff3ac03" alt="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" title="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" align="center" hspace="60" vspace="60" width="100%" height="100%">
 
 The counts at each level of energy burden group vary from year to year. For example, from 2017-2018, there is a decrease in the up to 2% energy burden group and a corresponding increase in the 2-5% and 5-8% burden groups. The up to 2% burden group has the highest number of census tracts across all years, indicating that most MA residents have lower energy burdens. Also true is that the above 15% burden group has the lowest count, suggesting that fewer census tracts have experienced very high energy burdens across this time period. However, there are sizeable shifts across the years. In 2020, the Up to 2% and 2-5% burden groups experienced notable increases, while the 5-8% burden group saw a significant decrease. In 2021 and 2022, the 8-15% and 5-8% burden groups grew significantly, resulting in a decrease in the 2-5% and up to 2% groups.  The Above 15% burden group has remained stable, making up the smallest proportion across all years.
 
 The results of average energy burdens by year and income group of census tracts reveal which income groups experienced the largest changes in burdens, and when:
-<img src="https://github.com/user-attachments/assets/32e10458-aa80-4d7e-a8de-e2df275d1785" alt="by year and income grp" title="yr group" align="center" hspace="60" vspace="60" width="60%" height="60%">
+<img src="https://github.com/user-attachments/assets/32e10458-aa80-4d7e-a8de-e2df275d1785" alt="by year and income grp" title="yr group" align="center" hspace="60" vspace="60" width="90%" height="90%">
 
 The lowest income groups experienced both the largest burdens across all years, but also the largest changes in their estimated energy burdens, particularly in 2022. 
 
