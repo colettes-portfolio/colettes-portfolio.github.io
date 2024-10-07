@@ -18,7 +18,7 @@ Check out my resume [here](https://github.com/user-attachments/files/17281382/Ba
 ### Question
 How can areas in Boston potentially facing energy burden be predicted based on the characteristics of their housing?
 
-<img src="/assets/img/ebrs_distribution_map_bg.png" alt="EBRS Distribution Map" title="EBRS Distribution Map" align="right" hspace="50" vspace="50" width="55%" height="55%">
+<img src="/assets/img/ebrs_distribution_map_bg.png" alt="EBRS Distribution Map" title="EBRS Distribution Map" align="right" hspace="50" vspace="50" width="75%" height="75%">
 
 ### Methods
 - Developed an Energy Burden Risk Score (EBRS) based on property assessment/characteristic data
@@ -40,7 +40,7 @@ How can areas in Boston potentially facing energy burden be predicted based on t
 [View Full Project Details](project2.md)
 ### Question
 How can areas in Boston/MA with the highest opportunity for additional or increased energy efficiency programs be identified? (in order to alleviate estimated energy burdens)
-<img src="/assets/img/energy_burden_income_map.png" alt="EBRS Distribution Map" title="Bivariate choropleth map of energy burden and high-income residents" align="right" hspace="50" vspace="50" width="55%" height="55%">
+<img src="/assets/img/energy_burden_income_map.png" alt="EBRS Distribution Map" title="Bivariate choropleth map of energy burden and high-income residents" align="right" hspace="50" vspace="50" width="75%" height="75%">
 
 ### Methods
 - Geospatial analysis using ArcGIS
@@ -65,7 +65,7 @@ How can areas in Boston/MA with the highest opportunity for additional or increa
 - What are the correlations between energy burdens and socioeconomic and demographic indicators?
 - How can large price shocks on specific utilities impact different types of customers?
  
-<img src="/assets/img/burden_change.gif" alt="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" title="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" align="right" hspace="60" vspace="60" width="50%" height="50%">
+<img src="/assets/img/burden_change.gif" alt="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" title="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" align="right" hspace="60" vspace="60" width="75%" height="75%">
 
 ### Methods
 - Quantitative analysis of energy consumption and cost data
