@@ -13,8 +13,12 @@ Check out my resume [here](https://github.com/user-attachments/files/17281382/Ba
 ## Estimating Energy Burden Risk in Boston via Property Characteristics
 *December 2022*
 [View Full Project Details](project1.md)
+
+
 ### Question
 How can areas in Boston potentially facing energy burden be predicted based on the characteristics of their housing?
+
+<img src="/assets/img/ebrs_distribution_map_bg.png" alt="EBRS Distribution Map" title="EBRS Distribution Map" align="right" hspace="50" vspace="50" width="55%" height="55%">
 
 ### Methods
 - Developed an Energy Burden Risk Score (EBRS) based on property assessment/characteristic data
@@ -30,19 +34,13 @@ How can areas in Boston potentially facing energy burden be predicted based on t
 - Need for targeted energy efficiency programs in specific neighborhoods
 - Importance of addressing housing quality and housing characteristics in energy burden mitigation strategies 
 
-![EBRS Distribution Map](/assets/img/ebrs_distribution_map_bg.png)
-*Map of EBRS distribution across Boston block groups*
-
-![EBRS Distribution Map 2](/assets/img/ebrs_distribution_map_5.png)
-*Map of EBRS distribution across Boston (scores above 0.5)*
-
-
 
 ## Energy Burden in Boston: A Geospatial Analysis of Residential Energy Consumption and Affordability
 *April 2023*
 [View Full Project Details](project2.md)
 ### Question
 How can areas in Boston/MA with the highest opportunity for additional or increased energy efficiency programs be identified? (in order to alleviate estimated energy burdens)
+<img src="/assets/img/energy_burden_income_map.png" alt="EBRS Distribution Map" title="Bivariate choropleth map of energy burden and high-income residents" align="right" hspace="50" vspace="50" width="55%" height="55%">
 
 ### Methods
 - Geospatial analysis using ArcGIS
@@ -58,13 +56,6 @@ How can areas in Boston/MA with the highest opportunity for additional or increa
 - Need for targeted outreach and assistance in specific neighborhoods
 - Importance of addressing the energy efficiency gap between income groups
 
-![Energy Burden and Income Map](/assets/img/energy_burden_income_map.png)
-*Bivariate choropleth map of energy burden and high-income residents*
-
-![Heat Pumps Map](/assets/img/heat_pumps.jpg)
-*Density of heat pump projects*
-
-
 
 ## Beyond the Burden: Pathways to Urban Resilience in the Energy Crisis of Massachusetts
 *April 2024*
@@ -73,6 +64,8 @@ How can areas in Boston/MA with the highest opportunity for additional or increa
 - How have energy burdens in Massachusetts evolved from 2017-2022?
 - What are the correlations between energy burdens and socioeconomic and demographic indicators?
 - How can large price shocks on specific utilities impact different types of customers?
+ 
+<img src="/assets/img/burden_change.gif" alt="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" title="Annual estimated energy burdens across Massachusetts census tracts (2017-2022)" align="right" hspace="60" vspace="60" width="50%" height="50%">
 
 ### Methods
 - Quantitative analysis of energy consumption and cost data
@@ -83,12 +76,13 @@ How can areas in Boston/MA with the highest opportunity for additional or increa
 - Large increase in the magnitude and quantity of areas experiencing higher energy burdens between 2017-2022
 - Increases were particularly concentrated among low-income and minority communities 
 
+
+
 ### Policy Implications
 - Need for increased investment in energy-efficient housing solutions in low-income areas
 - Importance of equitable access to clean energy upgrades
 
-![Energy Burden Evolution](/assets/img/burden_change.gif)
-*Annual estimated energy burdens across Massachusetts census tracts (2017-2022)*
+
 
 
 
