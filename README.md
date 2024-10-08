@@ -1,10 +1,12 @@
 # About me
-Sustainability manager and urban informatics specialist focusing on energy infrastructure, efficiency, conservation, and affordability. I currently serve as the Sustainability Manager of Harvard Medical School and the Harvard School of Dental Medicine, where I lead initiatives on a wide range of sustainability efforts across our campus. My role encompasses strategic sustainability planning, with a strong emphasis on green labs initiatives, energy and emissions data analysis, and the evaluation of procurement practices through a sustainability lens.
-A significant part of my work involves conducting in-depth energy savings analyses, assessing the financial and resource impacts of projects or new equipment in laboratories, and analyzing the implications of carbon regulations and commitments on our institution. I leverage data-driven approaches to enhance environmental sustainability in medical education and healthcare facilities.
+Sustainability manager and urban informatics specialist focusing on energy infrastructure, efficiency, conservation, and affordability. 
 
 I am currently completing my MS in Urban Informatics at Northeastern University, where I developed a strong focus on exploring the concept of energy burden—the percentage of household income spent on energy costs—and its implications for urban resilience, particularly in Massachusetts and in the City of Boston.
 
-Through my academic projects and professional work, I focus on improving energy systems and building infrastructure, as well as analyzing the efficacy and impacts of carbon and energy regulations on building owners and residents. I'm passionate about leveraging data science and urban informatics to address challenges in energy affordability, community resiliency, and climate change adaptation in MA. 
+I also currently serve as the Sustainability Manager of Harvard Medical School and the Harvard School of Dental Medicine, where I lead strategic sustainability planning, with a strong emphasis on green labs initiatives, energy and emissions data analysis, and the evaluation of procurement practices through a sustainability lens.
+A significant part of my work involves conducting energy savings analyses, assessing the financial and resource impacts of projects or new equipment in laboratories, and analyzing the implications of carbon regulations and commitments on our institution. 
+
+Through my academic and professional work, I focus on improving energy systems and building infrastructure, as well as analyzing the efficacy and impacts of carbon and energy regulations on building owners and residents. I'm passionate about leveraging data science and urban informatics to address challenges in energy affordability, community resiliency, and climate change adaptation in MA. 
 
 Check out my resume [here](https://github.com/user-attachments/files/17281382/Baker.Resume.pdf) and some of my projects below. 
 
