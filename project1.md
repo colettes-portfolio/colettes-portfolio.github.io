@@ -1,7 +1,5 @@
 # Estimating Energy Burden Risk via Property Characteristics
 
-## City of Boston 2021 Property Assessment Data
-
 December 15, 2022
 
 ## Executive Summary
