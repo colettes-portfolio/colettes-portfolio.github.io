@@ -10,7 +10,42 @@ Through my academic and professional work, I focus on improving energy systems a
 
 Check out my resume [here](https://github.com/user-attachments/files/17281382/Baker.Resume.pdf) and some of my projects below. 
 
-# Energy Burden Projects
+# Understanding Energy Burden in Massachusetts
+Energy burden is a critical challenge facing many households, particularly in regions like New England with its cold winters and rising energy costs. When accessing or affording energy becomes challenging, it can become a financial and hazardous liability for residential customers.
+
+# What is Energy Burden?
+Energy burden is calculated as the proportion of a household's annual utility bills out of their annual household income. However, it represents more than just a calculation - it's a complex issue that describes the inability to afford utility costs, often forcing households to make impossible choices between heating their homes and other necessities like food, what is commonly referred to as the "heat or eat" choice.
+
+# The Cycle of Energy Burden
+The tradeoffs households face when confronting energy burden are not short term. Beyond forgoing immediate necessities, energy burden contributes to a negative feedback loop that can trap families in an enduring cycle of poverty:
+
+ * When families cannot pay utility bills, they face shutoffs and potential eviction
+ * These create legal records affecting future housing and employment access
+ * Fear of eviction can lead to taking on predatory payday loans
+ * Households may skip medical care or medications
+ * These compounding factors make it increasingly difficult to escape poverty without intervention
+
+# Why It Matters Now
+This issue is particularly pertinent today as:
+
+ * Oil and gas market volatility has contributed to some of the highest inflation rates in forty years
+* In recent years, utilities serving Massachusetts customers have hiked winter energy prices significantly:
+    + National Grid: 64% increase in electricity bills
+    + Eversource: 23% increase in electricity bills
+    + Similar increases in gas pricing
+ * Climate change is creating more extreme temperatures, increasing both heating and cooling needs
+
+# The Compound Nature of Energy Burden
+Low-income residents are more likely to live in poor quality housing, creating a compounding effect:
+
+ * Inefficient properties increase energy costs disproportionately
+ * Higher income households have more flexibility to absorb unexpected high bills
+ * Lower income households often lack means to invest in efficiency upgrades
+ * Poor housing conditions often lead to higher energy consumption and costs
+
+# Exploring Distribution, Estimation, Intensity, and Solutions Through Research
+The following three projects examine different aspects of energy burden in Massachusetts:
+
 
 ## Estimating Energy Burden Risk in Boston via Property Characteristics
 *December 2022*
