@@ -1,3 +1,6 @@
+# A Geospatial Analysis of Residential Energy Consumption and Affordability
+
+April 23, 2022
 
 ## Executive Summary
 This report uses spatial analysis to estimate energy burden across Boston neighborhoods and identify areas in the City that may need increased targeting of energy efficiency programs. By combining property assessment data, utility consumption information, and demographic indicators, this study examines the geographic distribution of energy costs and burden across Boston's communities. It finds that certain neighborhoods, particularly those with high concentrations of older housing stock and lower-income residents, face disproportionate energy burdens. These patterns have significant implications for policy targeting and program design.
