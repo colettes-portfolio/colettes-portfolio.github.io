@@ -2,8 +2,11 @@
 
 ## Executive Summary
 Rising energy burdens in Massachusetts, exacerbated by socioeconomic disparities and market volatility, significantly undermine urban resilience by increasing vulnerability amongst households. While short-term strategies like heat assistance are necessary for maintaining survival for many households in the Commonwealth, they are palliative and are not adequate, not addressing the underlying causes and changes in conditions that have generated these conditions for households. This study quantifies energy burdens across Massachusetts from 2017-2022, assesses their correlation with socioeconomic and demographic indicators, and proposes interventions to reduce these burdens and strengthen urban resilience.
+
 ***
+
 *This research was conducted in April 2024. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
+
 ***
 ## Research Questions
 - How have energy burdens in Massachusetts evolved from 2017-2022?
@@ -120,6 +123,7 @@ An increased energy burden does not just strain the economy by preventing househ
 ***
 
 *This research was conducted in April 2024. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
+
 ***
 ## References
 
