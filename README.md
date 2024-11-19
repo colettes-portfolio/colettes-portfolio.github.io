@@ -62,7 +62,6 @@ Mapped energy burden distribution across Boston to identify areas needing increa
 Analyzed energy burden evolution from 2017-2022, revealing concerning trends in magnitude and distribution.
 
 [View Full Project →](project3.html)
-[View Full Project →](project3.html)
 </div>
-</div>
+
 
