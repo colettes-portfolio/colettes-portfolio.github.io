@@ -13,20 +13,27 @@ Check out my resume [here](https://github.com/user-attachments/files/17281382/Ba
 
 # The Energy Burden Crisis in Massachusetts
 
-My graduate research focuses on one of the most pressing challenges facing Massachusetts residents today: energy burden. Behind the statistics and policy discussions are real people making impossible choices.
-
-> "This is New England. It gets cold. We're cold," says Sherona Kravits. "And I work part time, and so...you know I'm thinking of getting another, going back to my other part time job which I had before covid, and so I'll have two part-time jobs. And I'll just...in order to survive."
+> "What can you sacrifice at this point?
+>
+> Food." —Sherona Kravits, widow heating her home with oil for 35 years (WCVB Channel 5 Boston, 2022)
+>
+> "That probably won't last me until the end of December... If I don't get help, I am going to freeze!" —Elaine Walker, receiving $1,000 in heating assistance but still struggling (WCVB Channel 5 Boston, 2022)
+>
+> "I know people that have to go to other people's house because they don't have any heat, or the oil run out. You can't stay in the house." —Elaine Walker (WCVB Channel 5 Boston, 2022)
+>
+> "Once you buy oil, you don't have any money to buy anything else." —Joseph Brooks, 91-year-old Hyde Park resident on social security (CBS Boston, 2022)
 
 <table>
 <tr>
+<td align="center"><h2 style="color: #cc0000;">73%</h2>Increase in home heating oil costs from $3.30 to $5.70 per gallon (2021-2022)</td>
 <td align="center"><h2 style="color: #cc0000;">64%</h2>Average monthly electricity bill increase (National Grid)</td>
-<td align="center"><h2 style="color: #cc0000;">73%</h2>Increase in home heating oil costs from 2021</td>
-<td align="center"><h2 style="color: #cc0000;">15%</h2>MA households facing severe energy burden</td>
+<td align="center"><h2 style="color: #cc0000;">15%</h2>Estimated % of MA households facing moderate/severe energy burden in 2022</td>
 </tr>
 </table>
 
-These stories from residents of Massachusetts are not isolated incidents, but rather a reflection of the hardships faced by thousands across the state. The difficulties reached a peak for some communities during the winter of 2022 when energy rates surged to historic highs due to the war in Ukraine.
+These stories reflect the hardships faced by thousands across Massachusetts. The difficulties reached a crisis point during the winter of 2022 when energy rates surged to historic highs due to the war in Ukraine. Today, many continue to struggle amid ongoing rate hikes across all utilities and rising overall costs of living, all without corresponding increases in income.
 
+My research examines this crisis and its solutions, exploring how we can prevent our most vulnerable neighbors from having to make these impossible choices between heating their homes and meeting other basic needs.
 Energy is a crucial source of economic and industrial growth; it is a basic and necessary input for all modern production and consumption activities in the US economy. It enables all systems to meet modern human needs -- food, shelter, employment, and transportation. However, when accessing or affording energy is challenging, it can become a financial and hazardous liability for residential customers, often referred to as "energy burden". Energy burden is a complex and compound issue used to describe the inability to afford utility costs, leading households to forgo spending in other categories, often other necessities like food, what is sometimes referred to as the "heat or eat" choice.
 
 The tradeoffs that households face when confronting energy burden are not short term - not only do they mean forgoing spending on necessities like food, health care, shelter in the short term, they also contribute to a negative feedback loop that can trap families in an enduring cycle of poverty. When low-income families are unable to pay utility bills, and face utility shut offs and evictions, these are legal processes, associated with social security records and appearing on background checks, which can have lifelong administrative impacts on housing and employment access. They can also have impacts on access to future credit.
