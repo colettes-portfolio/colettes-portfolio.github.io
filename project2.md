@@ -3,6 +3,11 @@
 ## Executive Summary
 This report attempts to estimate energy burden using average income information with average energy consumption data and identify its spatial distribution in combination with rebate and energy savings data as well as demographic indicators. By doing so, this report aims to identify areas with the highest opportunity for further energy efficiency programs and areas most at risk for high energy burdens. The findings highlight specific block groups of the city where increased energy efficiency programming would have the maximum benefit, while also revealing pressing needs for increased investment in energy-efficient housing solutions in low-income areas.
 
+***
+
+*This research was conducted in April 2023. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
+***
+
 ## Research Questions
  * How can areas in Boston/MA with the highest opportunity for additional or increased energy efficiency programs be identified (in order to alleviate estimated energy burdens)?
   * How can areas most at risk for high energy burdens be identified?
@@ -122,6 +127,7 @@ The information from this study should be used to target particular areas in Bos
 ***
 
 *This research was conducted in April 2023. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
+***
 
 ## References
 Brown, Marilyn A, Anmol Soni, Melissa V Lapsa, Katie Southworth, and Matt Cox. “High Energy Burden and Low-Income Energy Affordability: Conclusions from a Literature Review.” Progress in Energy 2, no. 4 (2020): 042003. https://doi.org/10.1088/2516-1083/abb954.
