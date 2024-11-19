@@ -10,9 +10,20 @@ Through my academic and professional work, I focus on improving energy systems a
 
 Check out my resume [here](https://github.com/user-attachments/files/17281382/Baker.Resume.pdf) and some of my projects below. 
 
-# Understanding Energy Burden
 
-"This is New England. It gets cold. We're cold," says Sherona Kravits. A widow living on a fixed income, before her husband passed away, they shared the bills. Now, she has to make sacrifices. "And I work part time, and so...you know I'm thinking of getting another, going back to my other part time job which I had before covid, and so I'll have two part-time jobs. And I'll just...in order to survive."
+# The Energy Burden Crisis in Massachusetts
+
+My graduate research focuses on one of the most pressing challenges facing Massachusetts residents today: energy burden. Behind the statistics and policy discussions are real people making impossible choices.
+
+> "This is New England. It gets cold. We're cold," says Sherona Kravits. "And I work part time, and so...you know I'm thinking of getting another, going back to my other part time job which I had before covid, and so I'll have two part-time jobs. And I'll just...in order to survive."
+
+<table>
+<tr>
+<td align="center"><h2 style="color: #cc0000;">64%</h2>Average monthly electricity bill increase (National Grid)</td>
+<td align="center"><h2 style="color: #cc0000;">73%</h2>Increase in home heating oil costs from 2021</td>
+<td align="center"><h2 style="color: #cc0000;">15%</h2>MA households facing severe energy burden</td>
+</tr>
+</table>
 
 These stories from residents of Massachusetts are not isolated incidents, but rather a reflection of the hardships faced by thousands across the state. The difficulties reached a peak for some communities during the winter of 2022 when energy rates surged to historic highs due to the war in Ukraine.
 
@@ -20,28 +31,53 @@ Energy is a crucial source of economic and industrial growth; it is a basic and 
 
 The tradeoffs that households face when confronting energy burden are not short term - not only do they mean forgoing spending on necessities like food, health care, shelter in the short term, they also contribute to a negative feedback loop that can trap families in an enduring cycle of poverty. When low-income families are unable to pay utility bills, and face utility shut offs and evictions, these are legal processes, associated with social security records and appearing on background checks, which can have lifelong administrative impacts on housing and employment access. They can also have impacts on access to future credit.
 
+
+## Understanding the Crisis
+
+<img src="assets/img/burden_change.gif" alt="Energy Burden Changes 2017-2022" style="width: 100%; margin: 20px 0;">
+
+The map above, from my most recent investigation into energy burdens, shows how they have evolved across Massachusetts from 2017 to 2022, revealing concerning trends in both magnitude and distribution.
+
+Summing up the research I've done into this subject as a graduate student at NEU, my key findings are:
+
+- Energy costs have risen dramatically in the past 5-8 years, with some households seeing their bills more than double
+- Low-income and minority communities face disproportionate impacts
+- The gap between energy-efficient and inefficient housing is continuing to grow and exacerbating the issue
+
 ## My Research
+During my studies, I have examined several different dimensions of energy burden in Massachusetts. Below are three of my works that explore this critical issue:
 
-Through my work, I examine different dimensions of energy burden in Massachusetts. Below are three projects that explore this critical issue:
-
-### [Project 1: Estimating Energy Burden Risk in Boston](project1.md)
-
+<div style="display: flex; gap: 20px; margin: 20px 0;">
+<div style="flex: 1; border: 1px solid #ccc; padding: 20px; border-radius: 5px; text-align: center;">
+<h1 style="font-size: 48px; margin: 0;">🏠</h1>
+<h3>Project 1: Estimating Energy Burden Risk in Boston</h3>
 Developed an Energy Burden Risk Score (EBRS) based on property assessment/characteristic data to identify areas potentially facing energy burden.
+<br><br>
+<a href="project1.html">View Full Project →</a>
+</div>
 
-[View Full Project →](project1.html)
+<div style="flex: 1; border: 1px solid #ccc; padding: 20px; border-radius: 5px; text-align: center;">
+<h1 style="font-size: 48px; margin: 0;">🗺️</h1>
+<h3>Project 2: Energy Burden in Boston: A Geospatial Analysis</h3>
+A geospatial examination identifying areas with the highest opportunity for additional or increased energy efficiency programs to alleviate estimated energy burdens.
+<br><br>
+<a href="project2.html">View Full Project →</a>
+</div>
 
-### [Project 2: Energy Burden in Boston: A Geospatial Analysis](project2.md)
+<div style="flex: 1; border: 1px solid #ccc; padding: 20px; border-radius: 5px; text-align: center;">
+<h1 style="font-size: 48px; margin: 0;">📈</h1>
+<h3>Project 3: Beyond the Burden: Pathways to Urban Resilience</h3>
+An analysis of how energy burdens in Massachusetts evolved from 2017-2022, revealing large increases in both magnitude and quantity of areas experiencing higher energy burdens.
+<br><br>
+<a href="project3.html">View Full Project →</a>
+</div>
+</div>
+---
 
-A geospatial examination identifying areas with the highest opportunity for additional or increased energy efficiency programs to alleviate estimated energy burdens. Found strong correlations between energy burden and socio-economic indicators, highlighting the need for targeted outreach and assistance in specific neighborhoods.
-
-[View Full Project →](project2.html)
-
-### [Project 3: Beyond the Burden: Pathways to Urban Resilience](project3.md)
-
-An analysis of how energy burdens in Massachusetts evolved from 2017-2022, revealing large increases in both magnitude and quantity of areas experiencing higher energy burdens, particularly concentrated among low-income and minority communities. The findings emphasize the need for increased investment in energy-efficient housing solutions in low-income areas and the importance of equitable access to clean energy upgrades.
-
-[View Full Project →](project3.html)
-
+<div style="background-color: #fff3e0; padding: 20px; border-left: 4px solid #ff9800; margin: 20px 0;">
+<h3>Looking to Learn More?</h3>
+Access the full research papers or discuss collaboration opportunities: <a href="mailto:your@email.com">Contact me</a>
+</div>
 
 
 
