@@ -58,12 +58,12 @@ The lowest burdens are in:
 
 <p> Mapping all scores, Figure 1, shows that there are some block groups whose scores are so low that they skew the visual analysis, as seen in the brightest spots in Figure 1. Limiting the map to display scores exclusively above 0.5, in Figure 2, reveals additional variability in its distribution across the city. Some of the highest burdens are clearly clustered in Allston, Hyde Park, South Dorchester, and Mattapan. It appears that moving away from the City's center tends to increase the EBRS, though immediately at the edges of the City limits, such as in the Roslindale and Brighton areas tend to have slightly lower EBRSs than those slightly more central to the City.</p>
 
-<p> <img src="https://github.com/user-attachments/assets/10b03c85-3c6a-4cfa-9798-165c70773111" width="130%" height="130%"> </p>
+<p> <img src="https://github.com/user-attachments/assets/10b03c85-3c6a-4cfa-9798-165c70773111" width="200%" height="200%"> </p>
 
 ### Average EBRS -- By Neighborhood
 <p> Though neighborhood-level EBRS aggregates were not used in statistical analysis, as block group level analysis has greater specificity and accuracy, Table 3 displays Average EBRS at the neighborhood level for legibility purposes. At the neighborhood level, the highest EBRSs are in Roslindale and Mattapan. These block groups have some of the highest concentrations of energy inefficient properties, mainly older R1-R4 homes. The neighborhoods with lowest EBRSs are in South Boston and in Central (Downtown) Boston.</p>
 
-<p> <img src="https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48" width="25%" height="25%"> </p>
+<p> <img src="https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48" width="50%" height="50%"> </p>
 
 
 
@@ -80,21 +80,21 @@ Strongest negative correlations:
 - Median home value
 - Proportion of residents who have completed a professional degree
 
-<p> <img src="https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560" width="25%" height="25%"> </p>
+<p> <img src="https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560" width="50%" height="50%"> </p>
 
 ### Bivariate Regression
 
 Given the strength of the EBRS's relationship with gas consumption (*thermsperhh*), it formed the basis of bivariate regression analysis, then multiple regression analysis. Running a regression on the two variables, with EBRS as the dependent variable and therms per household as independent shows that 21% of the variability in average EBRS can be explained by household energy consumption. Figure 3 shows the linear regression plot between average burden and therms consumed per household at the block group level.
 Figure 3
 
-<p> <img src="https://github.com/user-attachments/assets/4d0daaf9-ac20-43b8-8db4-cbc3537673b5" width="50%" height="50%"> </p>
+<p> <img src="https://github.com/user-attachments/assets/4d0daaf9-ac20-43b8-8db4-cbc3537673b5" width="100%" height="100%"> </p>
 
 
 ### Multiple Regression
 
 Table 6: Multiple Regression Results
 
-<p> <img src="https://github.com/user-attachments/assets/c6ea4905-1694-4b46-b5e7-b7f5bc44c67b" width="50%" height="50%"> </p>
+<p> <img src="https://github.com/user-attachments/assets/c6ea4905-1694-4b46-b5e7-b7f5bc44c67b" width="100%" height="100%"> </p>
 
 
 Multiple regression testing was conducted, adding one after another the most strongly correlated and statistically significant variables to the bivariate regression of EBRS with therms per household, to generate the most effective model. Variables suspected to be highly collinear with one another, such as multiple variables for maximum educational attainment, were not duplicated in the multiple regression, to avoid multicollinearity and overfitting the model. The strongest multiple regression is in Table 6.
