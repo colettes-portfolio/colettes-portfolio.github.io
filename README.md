@@ -48,31 +48,21 @@ Summing up the research I've done into this subject as a graduate student at NEU
 
 During my studies, I have examined several different dimensions of energy burden in Massachusetts. Below are three of my works that explore this critical issue:
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin: 40px 0;">
-  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 30px 20px; min-height: 400px; text-align: center;">
-    <img src="house-icon.png" alt="House Icon" style="width: 60px; height: 60px; margin-bottom: 20px;">
-    <h3>Project 1: Estimating Energy Burden Risk in Boston</h3>
-    <p style="margin: 20px 0;">Developed an Energy Burden Risk Score (EBRS) based on property assessment/characteristic data to identify areas potentially facing energy burden.</p>
-    <a href="project1.html" style="color: #0066cc;">View Full Project →</a>
-  </div>
+### 🏠 Project 1: EBRS Analysis
+Developed an Energy Burden Risk Score based on property characteristics to identify at-risk areas in Boston.
 
-  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 30px 20px; min-height: 400px; text-align: center;">
-    <img src="map-icon.png" alt="Map Icon" style="width: 60px; height: 60px; margin-bottom: 20px;">
-    <h3>Project 2: Energy Burden in Boston: A Geospatial Analysis</h3>
-    <p style="margin: 20px 0;">A geospatial examination identifying areas with the highest opportunity for additional or increased energy efficiency programs to alleviate estimated energy burdens.</p>
-    <a href="project2.html" style="color: #0066cc;">View Full Project →</a>
-  </div>
+[View Full Project →](project1.html)
 
-  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 30px 20px; min-height: 400px; text-align: center;">
-    <img src="chart-icon.png" alt="Chart Icon" style="width: 60px; height: 60px; margin-bottom: 20px;">
-    <h3>Project 3: Beyond the Burden: Pathways to Urban Resilience</h3>
-    <p style="margin: 20px 0;">An analysis of how energy burdens in Massachusetts evolved from 2017-2022, revealing large increases in both magnitude and quantity of areas experiencing higher energy burdens.</p>
-    <a href="project3.html" style="color: #0066cc;">View Full Project →</a>
-  </div>
+### 🗺️ Project 2: Spatial Patterns
+Mapped energy burden distribution across Boston to identify areas needing increased efficiency programs.
+
+[View Full Project →](project2.html)
+
+### 📈 Project 3: Urban Resilience
+Analyzed energy burden evolution from 2017-2022, revealing concerning trends in magnitude and distribution.
+
+[View Full Project →](project3.html)
+[View Full Project →](project3.html)
 </div>
-
-<div style="background-color: #fff3e0; padding: 20px; border-left: 4px solid #ff9800; margin: 20px 0;">
-<h3>Looking to Learn More?</h3>
-Access the full research papers or discuss collaboration opportunities: <a href="mailto:your@email.com">Contact me</a>
 </div>
 
