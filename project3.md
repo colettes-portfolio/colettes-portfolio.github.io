@@ -53,6 +53,8 @@ The results of the statistical analysis show that average energy costs and energ
 
 The counts at each level of energy burden group vary from year to year. For example, from 2017-2018, there is a decrease in the up to 2% energy burden group and a corresponding increase in the 2-5% and 5-8% burden groups. The up to 2% burden group has the highest number of census tracts across all years, indicating that most MA residents have lower energy burdens. Also true is that the above 15% burden group has the lowest count, suggesting that fewer census tracts have experienced very high energy burdens across this time period. However, there are sizeable shifts across the years. In 2020, the Up to 2% and 2-5% burden groups experienced notable increases, while the 5-8% burden group saw a significant decrease. In 2021 and 2022, the 8-15% and 5-8% burden groups grew significantly, resulting in a decrease in the 2-5% and up to 2% groups.  The Above 15% burden group has remained stable, making up the smallest proportion across all years.
 
+<img src="assets/img/burden_change.gif" alt="Energy Burden Changes 2017-2022" style="width: 100%; margin: 20px 0;">
+
 ### Income Group Analysis
 The results of average energy burdens by year and income group of census tracts reveal which income groups experienced the largest changes in burdens, and when:
 <img src="https://github.com/user-attachments/assets/32e10458-aa80-4d7e-a8de-e2df275d1785" alt="by year and income grp" title="yr group" align="center" hspace="60" vspace="60" width="90%" height="90%">
