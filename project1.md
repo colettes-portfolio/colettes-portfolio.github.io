@@ -54,7 +54,9 @@ The lowest burdens are in:
 - Back Bay by the Boston Public Library (0.36)
 - Seaport (0.42)
 
-<p> <img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" alt="Table 1: Summary Statistics of Average EBRS by Block Group" title="Table 1: Summary Statistics of Average EBRS by Block Group" align="left" hspace="50" vspace="50" width="30%" height="30%"> </p>
+
+
+![image](https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587)
 
 <p> Mapping all scores, Figure 1, shows that there are some block groups whose scores are so low that they skew the visual analysis, as seen in the brightest spots in Figure 1. Limiting the map to display scores exclusively above 0.5, in Figure 2, reveals additional variability in its distribution across the city. Some of the highest burdens are clearly clustered in Allston, Hyde Park, South Dorchester, and Mattapan. It appears that moving away from the City's center tends to increase the EBRS, though immediately at the edges of the City limits, such as in the Roslindale and Brighton areas tend to have slightly lower EBRSs than those slightly more central to the City.</p>
 
