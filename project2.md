@@ -6,6 +6,7 @@ This report attempts to estimate energy burden using average income information 
 ***
 
 *This research was conducted in April 2023. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
+
 ***
 
 ## Research Questions
@@ -127,6 +128,7 @@ The information from this study should be used to target particular areas in Bos
 ***
 
 *This research was conducted in April 2023. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
+
 ***
 
 ## References
