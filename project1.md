@@ -60,7 +60,7 @@ The lowest burdens are in:
 
 <p> Mapping all scores, Figure 1, shows that there are some block groups whose scores are so low that they skew the visual analysis, as seen in the brightest spots in Figure 1. Limiting the map to display scores exclusively above 0.5, in Figure 2, reveals additional variability in its distribution across the city. Some of the highest burdens are clearly clustered in Allston, Hyde Park, South Dorchester, and Mattapan. It appears that moving away from the City's center tends to increase the EBRS, though immediately at the edges of the City limits, such as in the Roslindale and Brighton areas tend to have slightly lower EBRSs than those slightly more central to the City.</p>
 
-<p> <img src="https://github.com/user-attachments/assets/10b03c85-3c6a-4cfa-9798-165c70773111" width="200%" height="200%"> </p>
+<p> ![image](https://github.com/user-attachments/assets/10b03c85-3c6a-4cfa-9798-165c70773111)  </p>
 
 ### Average EBRS -- By Neighborhood
 <p> Though neighborhood-level EBRS aggregates were not used in statistical analysis, as block group level analysis has greater specificity and accuracy, Table 3 displays Average EBRS at the neighborhood level for legibility purposes. At the neighborhood level, the highest EBRSs are in Roslindale and Mattapan. These block groups have some of the highest concentrations of energy inefficient properties, mainly older R1-R4 homes. The neighborhoods with lowest EBRSs are in South Boston and in Central (Downtown) Boston.</p>
