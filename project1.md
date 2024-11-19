@@ -4,7 +4,9 @@
 Regular seasonal utility costs can pose a crushing burden to many Americans and New Englanders, especially during its cold winters. Due to energy burden's close relationship to the quality of housing and energy inefficiency accessible to low-income households, this paper uses the 2021 City of Boston's Property Assessment dataset, and the detailed property characteristics therein, to predict areas in the City that may be experiencing elevated energy burden. It examines calculations of energy burden risk through the lens of socio-economic demographic data from the 2015-2019 American Community Survey, as well as comparing the calculated risks to utility consumption from Mass Save's 2020 Massachusetts Residential Customer Profile Study. This paper finds that access to energy efficient housing is not equitably distributed across the City of Boston, and this gap may grow.
 
 ***
+
 *This research was conducted in December 2022. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
+
 ***
 
 ## Research Questions
@@ -42,7 +44,9 @@ EBRS = (AC Score + Year Score + Condition Score + Roof Score) / Maximum Possible
 Learn more about how I calculated this variable by visiting a more detailed page on its construction and background on the logic: [View Variable Construction](project1_ebrs.md)
 
 ## Results & Analysis
+
 ### Distribution of EBRS
+
 The block group with the highest average Energy Burden Risk Score is in Lower Allston (0.8969), followed by Brighton's Oak Square and Franklin Field South in Mattapan (0.89, 0.87, respectively).
 
 The lowest burdens are in:
@@ -50,14 +54,15 @@ The lowest burdens are in:
 - Back Bay by the Boston Public Library (0.36)
 - Seaport (0.42)
 
-<p> <img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" alt="Table 1: Summary Statistics of Average EBRS by Block Group" title="Table 1: Summary Statistics of Average EBRS by Block Group" align="left" hspace="50" vspace="50" width="15%" height="15%"> </p>
+<p> <img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" alt="Table 1: Summary Statistics of Average EBRS by Block Group" title="Table 1: Summary Statistics of Average EBRS by Block Group" align="left" hspace="50" vspace="50" width="30%" height="30%"> </p>
 
 <p> Mapping all scores, Figure 1, shows that there are some block groups whose scores are so low that they skew the visual analysis, as seen in the brightest spots in Figure 1. Limiting the map to display scores exclusively above 0.5, in Figure 2, reveals additional variability in its distribution across the city. Some of the highest burdens are clearly clustered in Allston, Hyde Park, South Dorchester, and Mattapan. It appears that moving away from the City's center tends to increase the EBRS, though immediately at the edges of the City limits, such as in the Roslindale and Brighton areas tend to have slightly lower EBRSs than those slightly more central to the City.</p>
-<p>
-<img src="https://github.com/user-attachments/assets/10b03c85-3c6a-4cfa-9798-165c70773111" width="85%" height="85%"></p>
+
+<p><img src="https://github.com/user-attachments/assets/10b03c85-3c6a-4cfa-9798-165c70773111" width="85%" height="85%"></p>
 
 ### Average EBRS -- By Neighborhood
 <p> Though neighborhood-level EBRS aggregates were not used in statistical analysis, as block group level analysis has greater specificity and accuracy, Table 3 displays Average EBRS at the neighborhood level for legibility purposes. At the neighborhood level, the highest EBRSs are in Roslindale and Mattapan. These block groups have some of the highest concentrations of energy inefficient properties, mainly older R1-R4 homes. The neighborhoods with lowest EBRSs are in South Boston and in Central (Downtown) Boston.</p>
+
 <img src = "https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48" width=25% height=25%>
 
 
