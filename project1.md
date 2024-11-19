@@ -1,9 +1,12 @@
+# Estimating Energy Burden Risk via Property Characteristics
+
 ## Executive Summary
 Regular seasonal utility costs can pose a crushing burden to many Americans and New Englanders, especially during its cold winters. Due to energy burden's close relationship to the quality of housing and energy inefficiency accessible to low-income households, this paper uses the 2021 City of Boston's Property Assessment dataset, and the detailed property characteristics therein, to predict areas in the City that may be experiencing elevated energy burden. It examines calculations of energy burden risk through the lens of socio-economic demographic data from the 2015-2019 American Community Survey, as well as comparing the calculated risks to utility consumption from Mass Save's 2020 Massachusetts Residential Customer Profile Study. This paper finds that access to energy efficient housing is not equitably distributed across the City of Boston, and this gap may grow.
-***
 
+***
 *This research was conducted in December 2022. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
 ***
+
 ## Research Questions
 This study explores these key questions:
 - Can areas in Boston facing energy burden be predicted based on the characteristics of their housing?
