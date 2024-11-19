@@ -1,71 +1,96 @@
 # A Geospatial Analysis of Residential Energy Consumption and Affordability
 
-April 23, 2022
-
 ## Executive Summary
-This report uses spatial analysis to estimate energy burden across Boston neighborhoods and identify areas in the City that may need increased targeting of energy efficiency programs. By combining property assessment data, utility consumption information, and demographic indicators, this study examines the geographic distribution of energy costs and burden across Boston's communities. It finds that certain neighborhoods, particularly those with high concentrations of older housing stock and lower-income residents, face disproportionate energy burdens. These patterns have significant implications for policy targeting and program design.
+This report attempts to estimate energy burden using average income information with average energy consumption data and identify its spatial distribution in combination with rebate and energy savings data as well as demographic indicators. By doing so, this report aims to identify areas with the highest opportunity for further energy efficiency programs and areas most at risk for high energy burdens. The findings highlight specific block groups of the city where increased energy efficiency programming would have the maximum benefit, while also revealing pressing needs for increased investment in energy-efficient housing solutions in low-income areas.
 
-## Research Questions 
-  * Can areas with the highest opportunity for further energy efficiency programs be identified?
-  * Can areas most at risk for high energy burdens be identified?
+## Research Questions
+ * How can areas in Boston/MA with the highest opportunity for additional or increased energy efficiency programs be identified (in order to alleviate estimated energy burdens)?
+  * How can areas most at risk for high energy burdens be identified?
 
-## Data & Methods
-
-### Data Sources
-The study utilized three main datasets:
+## Data Sources & Methods
+### Data
+This study used three datasets to estimate the energy burden in Boston and identify neighborhoods where there should be greater uptake of energy efficiency programs:
 
 1. City of Boston Property Assessment dataset
+   - Property details for all unique properties in the city
+   - 133,071 individual residential properties
+   - Key fields: property ID, number of units, heat type, property use type
+
 2. Mass Save CY2021 Residential Customer Study
+   - Household customer numbers
+   - Total electricity and natural gas consumption at block group level
+   - Average electricity and gas consumption per household calculated
+   - Average electricity and natural gas rates for 2021
+
 3. American Community Survey (2015-2019)
-4. Boston neighborhoods, census tracts, and blockgroups shapefile
+   - Demographic indicators at block group/census tract levels from BARI
 
-### Methods 
+### Methods
+A significant amount of data processing and manipulation was required to ensure all datasets were in the same format for joining, and to standardize the data for consistency and accuracy. Although none of these primary datasets are inherently spatial, each contained identifiers for block group and census tracts. The geospatial dataset, a shapefile of Boston's neighborhoods, Census Tracts and Block Groups, was joined onto other datasets for spatial analysis.
 
-<p>Overall, a significant amount of data processing and manipulation was required to ensure that all datasets were in the same format for joining, and to standardize the data so that consistency and accuracy could be achieved in the analysis. Although none of these primary datasets are inherently spatial, each of them contained identifiers for block group and census tracts. The geospatial dataset, a shapefile of Boston's neighborhoods, the Census Tracts and Block Groups within each neighborhood, was joined onto the other datasets to spatially analyze and examine the data. </p>
-<p>The Property Assessment dataset is a comprehensive dataset containing property details for all unique properties in the city, including their latitude and longitude. The data file was loaded into ArcGIS, and after limiting the data to just residential properties, the XY Table to Points tool was used to convert the latitude and longitude fields into point features on the map. The data was re-projected to match up with the Boston neighborhoods shapefile. This allowed the mapping of each property individually and establish an understanding of the distribution of properties in terms of quantity, type, and heat type across the city.</p>
-<p>The Mass Save dataset was used to gather information on energy. The fields in this dataset include total energy consumption and total energy savings resulting from utility energy efficiency programs at the block group level, as well as the number of accounts contributing to these totals. After loading these data in ArcGIS, several calculated fields were created to begin mapping average energy consumption per household spatially and begin the estimation of energy burden. Average energy consumption and savings per household for both gas and electricity at the block group level were calculated. This was combined with average 2021 electricity and gas rates to estimate annual energy costs for each block group. For electricity, delivery costs were estimated at $0.61/kWh, supply at $0.113/kWh. For gas, $1.544/therm. Estimated electricity cost and estimated gas costs were combined to create a field for estimated average annual energy costs per household for each block group.</p>
-<p>Finally, the American Community Survey was joined onto this dataset. Its field for median income per block group was leveraged to create a metric for estimated average energy burden for each block group:</p>
-                  <p>             *Estimated Annual Energy Costs / Median Annual Income = Estimated Energy Burden*</p>
-<p>The distribution of energy burden was then visible, and could be examined alongside other socioeconomic indicators from the Census data. Final steps of mapping were definition queries on multiple layers to identify block groups where all of the following criteria were met: was a high density of housing, high density of multifamily units, high energy burden, and low savings program uptake. </p>
-
-### Limitations 
-
-<p>In the property assessment data, its primary limitation is missing or incomplete data.  At the outset of this project, heat type was going to be a crucial field in estimating energy burden – a more efficient system could be associated with lower anticipated energy costs.  However, the heat type field was found to lack both completeness and specificity. Summary statistics were run in ArcGIS, many census tracts had large proportions of null entries for this field, out of hundreds or thousands of units, some areas had 50-60% of entries empty. Some areas and property types were more likely to have this field completed, which created an imbalance in trying to examine the city as a whole. Even if the data had been more complete however, the data that is present only has five entries (other than null): electric heat, forced heat, heat pumps, space heat, and water/steam heat. Unfortunately, some of these entries are too general to be able to assess whether they would be present in an energy efficient or inefficient property. One of the key distinctions is that there is no way to distinguish whether oil or gas heat is used for water/steam, by far the most common heat type in Boston’s largely aged building stock. This is a crucial distinction, as oil heat can be extremely inefficient and expensive, much more likely to contribute to a potential energy burden than gas heat. The only real point of interest from this field, in the end, is the heat pump field (please see Figure 2 in Analysis section for this map and discussion). </p>
-<p>The use of aggregated data, which has already been acknowledged, is the study's main drawback. Although the Mass Save dataset offers excellent data on energy use and savings that are typically unavailable, it does not (as might be expected) provide information on specific households. As a result, the estimated average household energy use and savings for gas and electricity at the block group level may not correctly reflect the actual energy use and savings of specific families within the block group. Also, the ACS indicators were downloaded for the 2015-2019 period, which means that the census data (including the median income field), does not match the CY2021 data year of Property Assessment and Mass Save. Furthermore, while the use of median income as a metric for estimated energy burden provides a useful approximation of the ability of households to pay for their energy bills, it does not take into account other factors such as household size, composition, and energy consumption behavior. Therefore, the estimated energy burden for each block group should be interpreted as a rough estimate rather than an accurate measurement.</p>
-<p>The study only takes into consideration the energy burden of residential houses in Boston; it makes no attempt to account for the energy consumption or load of commercial or industrial properties that may be surrounding them and influencing overall neighborhood demand. </p>
+Estimated energy burden was calculated as:
+```
+Estimated Annual Energy Costs / Median Annual Income = Estimated Energy Burden
+```
 
 ## Results & Analysis 
 
-Average Household electricity use per block group: This map shows the average household electricity use for each block group in Boston. The data suggests that the highest electricity consumption occurs in the downtown area and parts of the South End. Other areas with higher-than-average electricity usage include East Boston, parts of Dorchester, and parts of Roxbury. In contrast, areas such as West Roxbury and Hyde Park tend to have lower than average electricity consumption. 
+### Energy Consumption Patterns 
+
+#### Average Household electricity use per block group: 
+This map shows the average household electricity use for each block group in Boston. The data suggests that the highest electricity consumption occurs in the downtown area and parts of the South End. Other areas with higher-than-average electricity usage include East Boston, parts of Dorchester, and parts of Roxbury. In contrast, areas such as West Roxbury and Hyde Park tend to have lower than average electricity consumption. 
+
 ![image](https://github.com/user-attachments/assets/bfe55410-0f73-4b17-8d1a-54ea35bfb10f)
 
-The average household gas use for each block group in Boston. The data reveals that neighborhoods such as Dorchester , Mattapan, Jamaica Plain, and parts of Brighton tend to have the highest gas consumption, while areas like Mission Hill, South Boston, the South End, and Charlestown tend to have lower than average gas consumption. Many properties in Boston, especially triple deckers and brownstones, still have single building-wide heating systems like boilers with radiators, which are more difficult to submeter. Although landlords could invest in upgrades to submeter each apartment, they may find it cost prohibitive or inefficient to do so. As a result, landlords pay the utility bill and try to recoup these costs through rent increases, often telling tenants that heat is included in their base rent costs. This creates a market failure where both tenants and landlords have little incentive to conserve energy. For tenants living in inefficient buildings with heat-included rents, even if they are not paying monthly utility bills, they could still be facing increased costs due to energy costs being absorbed in the rent. While this cost increase may have benefits for some tenants, such as protection from market fluctuations and reduced monthly financial strain, it also creates an energy burden. Some building owners may try to increase rents to amounts greater than the overall utility costs, especially during years with higher gas prices, which places an even greater financial burden on tenants.
+#### Average household gas use for each block group in Boston: 
+
+The data reveals that neighborhoods such as Dorchester , Mattapan, Jamaica Plain, and parts of Brighton tend to have the highest gas consumption, while areas like Mission Hill, South Boston, the South End, and Charlestown tend to have lower than average gas consumption. Many properties in Boston, especially triple deckers and brownstones, still have single building-wide heating systems like boilers with radiators, which are more difficult to submeter. Although landlords could invest in upgrades to submeter each apartment, they may find it cost prohibitive or inefficient to do so. As a result, landlords pay the utility bill and try to recoup these costs through rent increases, often telling tenants that heat is included in their base rent costs. This creates a market failure where both tenants and landlords have little incentive to conserve energy. For tenants living in inefficient buildings with heat-included rents, even if they are not paying monthly utility bills, they could still be facing increased costs due to energy costs being absorbed in the rent. While this cost increase may have benefits for some tenants, such as protection from market fluctuations and reduced monthly financial strain, it also creates an energy burden. Some building owners may try to increase rents to amounts greater than the overall utility costs, especially during years with higher gas prices, which places an even greater financial burden on tenants.
 Policies that encourage the inclusion of energy costs in base rents could be appropriate if they lead to greater efficiency via investments in energy-efficient construction. However, if investing in individual metering of apartments is their response to challenges associated with higher utility costs, not investing in energy efficiency infrastructure, it will also not lead to greater energy efficiency at these properties. If building owners have no incentive to reduce the energy intensity of their properties since they can recoup costs via rent increases, properties’ energy burden ratio can still have a negative impact on tenants as they may be unable to afford the rent in these buildings.
+
 ![image](https://github.com/user-attachments/assets/bef855b3-906b-4e6b-ac26-86bac6f0a9a8)
 
-This map displays the estimated average annual energy costs per household for each block group in Boston. The data suggests that the highest energy costs tend to occur in the North End, parts of Roxbury, parts of Dorchester, Brighton, and Mattapan. In contrast, areas such as East Boston, South Boston, East Dorchester, and Roslindale tend to have lower than average energy costs. 
+#### Estimated average annual energy costs per household for each block group in Boston
+
+The data suggests that the highest energy costs tend to occur in the North End, parts of Roxbury, parts of Dorchester, Brighton, and Mattapan. In contrast, areas such as East Boston, South Boston, East Dorchester, and Roslindale tend to have lower than average energy costs. 
+
 ![image](https://github.com/user-attachments/assets/298a8c5e-f646-4d7f-9520-e197818a8d19)
 
-This map displays the average household gas savings resulting from utility energy efficiency programs for each block group in Boston. The data shows that the highest savings tend to occur in neighborhoods such as Roxbury, Allston/Brighton, and West Roxbury. In contrast, areas such as South Boston, parts of Dorchester, and East Boston tend to have lower than average gas savings. Though the highest savings are appearing in the same areas as some of the highest average usage numbers, notably, the quantities of savings are quite low. 
+#### Average household gas savings resulting from utility energy efficiency programs for each block group in Boston
+
+The data shows that the highest savings tend to occur in neighborhoods such as Roxbury, Allston/Brighton, and West Roxbury. In contrast, areas such as South Boston, parts of Dorchester, and East Boston tend to have lower than average gas savings. Though the highest savings are appearing in the same areas as some of the highest average usage numbers, notably, the quantities of savings are quite low. 
+
 ![image](https://github.com/user-attachments/assets/2ab927ff-4179-4f49-bd3f-dcaa5178bfe9)
 
-This map displays the average household electricity savings resulting from utility energy efficiency programs for each block group in Boston. The data shows that the highest savings tend to occur in Jamaica Plain, and parts of Dorchester and Mattapan. In contrast, areas such as the North End, the South End, and Easton Boston tend to have lower than average electricity savings. Similar to the gas savings estimates, though many of the areas with higher-than-average electricity consumption seem to have the highest savings estimates, which is a good sign that neighborhoods are well targeted, the savings themselves are minimal. A household using 10,000 kWh per year (some of the highest in the city) saving 600 kWh per year (more than any of the block groups saved) will only have a 6% reduction in their annual cost. 
+#### Average household electricity savings resulting from utility energy efficiency programs for each block group in Boston
+
+The data shows that the highest savings tend to occur in Jamaica Plain, and parts of Dorchester and Mattapan. In contrast, areas such as the North End, the South End, and Easton Boston tend to have lower than average electricity savings. Similar to the gas savings estimates, though many of the areas with higher-than-average electricity consumption seem to have the highest savings estimates, which is a good sign that neighborhoods are well targeted, the savings themselves are minimal. A household using 10,000 kWh per year (some of the highest in the city) saving 600 kWh per year (more than any of the block groups saved) will only have a 6% reduction in their annual cost. 
+
 ![image](https://github.com/user-attachments/assets/db88b5a2-033c-4de2-86a3-d2d0e3a632cd)
 
 The estimated energy burden map shows that certain neighborhoods, such as Roxbury, Mattapan, and Dorchester, have a higher estimated energy burden than others. These neighborhoods also tend to have lower median household incomes, which suggests that energy costs may be disproportionately burdensome for low-income households in these areas. Additionally, certain block groups within neighborhoods have higher estimated energy burdens than others, indicating that energy burden may be a localized issue within some neighborhoods. The map of areas with the worst energy burden highlights block groups with the highest estimated energy burden in the city. These areas tend to be in neighborhoods with lower median household incomes, such as Roxbury, Mattapan, and Dorchester, explored further in Figure 9.
+
 ![image](https://github.com/user-attachments/assets/d63ce279-fec1-46e4-9d55-a628e96bb8a4)
 
-The bivariate choropleth map showing the relationship between estimated energy burden and high-income residents reveals a clear pattern: high-income areas tend to have lower estimated energy burdens than low-income areas. This highlights the potential unequal distribution of energy burden across different income groups within the city of Boston. Some of the wealthiest areas, like Roslindale, West Roxbury, Charlestown, the South End and Bay Village have low burdens and high incomes. Recall Figure 2, on concentration of energy-efficient (but expensive) heat pump technology. The areas of highest density of that tech are located in areas that are the wealthiest, and also some of the lowest burdens. 
+### Socioeconomic Relationships
+
+#### Bivariate choropleth map showing the relationship between estimated energy burden and high-income residents
+Reveals a clear pattern: high-income areas tend to have lower estimated energy burdens than low-income areas. This highlights the potential unequal distribution of energy burden across different income groups within the city of Boston. Some of the wealthiest areas, like Roslindale, West Roxbury, Charlestown, the South End and Bay Village have low burdens and high incomes. Recall Figure 2, on concentration of energy-efficient (but expensive) heat pump technology. The areas of highest density of that tech are located in areas that are the wealthiest, and also some of the lowest burdens. 
+
 ![image](https://github.com/user-attachments/assets/64b6cabe-da3e-4918-aa4c-6c8268773d0a)
 
-The bivariate choropleth map showing the relationship between estimated energy burden and limited English proficiency reveals that areas with a higher percentage of residents who are limited English proficient tend to have higher estimated energy burdens. This suggests that language barriers may make it difficult for households to access energy-saving programs and resources, leading to higher energy costs. 
+#### Bivariate choropleth map showing the relationship between estimated energy burden and limited English proficiency
+Reveals that areas with a higher percentage of residents who are limited English proficient tend to have higher estimated energy burdens. This suggests that language barriers may make it difficult for households to access energy-saving programs and resources, leading to higher energy costs. 
+
 ![image](https://github.com/user-attachments/assets/2bc40afe-da3d-40fc-ab17-0cc5ced47b6d)
 
+#### Bivariate choropleth map showing the relationship between estimated energy burden and the percentage of residents who are renters 
+Indicates that areas with a higher percentage of renters tend to have higher estimated energy burdens. Renters may be less likely to invest in energy-saving measures, such as insulation or weatherization since they do not own the property and may not see a direct benefit from these investments. 
 
-The bivariate choropleth map showing the relationship between estimated energy burden and the percentage of residents who are renters indicates that areas with a higher percentage of renters tend to have higher estimated energy burdens. Renters may be less likely to invest in energy-saving measures, such as insulation or weatherization since they do not own the property and may not see a direct benefit from these investments. 
 ![image](https://github.com/user-attachments/assets/7278c980-e204-4fb2-959d-103914b1c6bf)
 
-Lastly, the map of areas with both the worst energy burden, lowest electric and savings, and higher concentrations of multifamily houses with between 2 and 6 units, shows block groups that have both a high estimated energy burden and low average savings from utility energy efficiency programs. These areas may be particularly in need of targeted outreach and assistance to help households reduce their energy costs. They are largely concentrated in Roxbury, Mattapan, and Dorchester, though there are a few elsewhere (Brighton and Charlestown, Hyde Park, JP). This information could be useful in designing policies meant to target low efficiency properties with high risk residents, and is the culmination of the report’s analytical efforts.
+#### Priority areas for intervention
+Map of areas with both the worst energy burden, lowest electric and savings, and higher concentrations of multifamily houses with between 2 and 6 units, shows block groups that have both a high estimated energy burden and low average savings from utility energy efficiency programs. These areas may be particularly in need of targeted outreach and assistance to help households reduce their energy costs. They are largely concentrated in Roxbury, Mattapan, and Dorchester, though there are a few elsewhere (Brighton and Charlestown, Hyde Park, JP). This information could be useful in designing policies meant to target low efficiency properties with high risk residents, and is the culmination of the report’s analytical efforts.
+
 ![image](https://github.com/user-attachments/assets/b7bc7eee-b908-44e2-8137-f5bd60b9336d)
 
 ## Discussion
@@ -79,6 +104,24 @@ Lastly, the map of areas with both the worst energy burden, lowest electric and 
 To address this issue, there needs to be a concerted effort by the City of Boston and the State of Massachusetts to increase access to energy-efficient housing for low-income residents. This could include programs that provide funding for energy-efficient upgrades to existing housing stock, incentives for developers to build energy-efficient housing in low-income areas, and initiatives that prioritize the retrofitting of public housing with energy-efficient technologies.
 The information from this study should be used to target particular areas in Boston, homeowners and occupants with information relevant and accessible to the issues they face, accompanied by broad assistance and energy assessments. Integrated energy, health, and housing funding, resources, and engagement must become a priority for City government, potentially as part of their carbon-free initiatives. Environmental improvement cannot take place if significantly at risk, low-income, traditionally marginalized communities, already suffering from environmental hazards and inequity, are left out. Notably, these solutions cannot be implemented in a vacuum and must be tailored to the unique needs of each community. This includes taking into account factors such as language barriers, cultural norms, and others that may impact the effectiveness of these programs. Moving forward, it will be essential for policymakers to prioritize the development of sustainable, equitable housing policies that address the energy efficiency and quality of housing in low-income areas. Failure to do so will only exacerbate the energy burden faced by low-income households and hinder efforts to transition to a low-carbon, sustainable energy future for Boston.</p>
 
+## Policy Recommendations
+1. Increase access to energy-efficient housing for low-income residents through:
+   - Funding for energy-efficient upgrades to existing housing stock
+   - Incentives for developers to build energy-efficient housing in low-income areas
+   - Initiatives prioritizing retrofitting of public housing with energy-efficient technologies
+
+2. Target particular areas in Boston with information relevant and accessible to the issues they face, accompanied by broad assistance and energy assessments
+
+3. Make integrated energy, health, and housing funding, resources, and engagement a priority for City government
+
+4. Ensure solutions are tailored to community needs, considering:
+   - Language barriers
+   - Cultural norms
+   - Other factors that may impact program effectiveness
+
+***
+
+*This research was conducted in April 2023. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:baker.cole@northeastern.edu).*
 
 ## References
 Brown, Marilyn A, Anmol Soni, Melissa V Lapsa, Katie Southworth, and Matt Cox. “High Energy Burden and Low-Income Energy Affordability: Conclusions from a Literature Review.” Progress in Energy 2, no. 4 (2020): 042003. https://doi.org/10.1088/2516-1083/abb954.
