@@ -1,50 +1,53 @@
-# Estimating Energy Burden Risk via Property Characteristics
-
-December 15, 2022
-
 ## Executive Summary
-<p>This paper uses the 2021 City of Boston's Property Assessment dataset, and the detailed property characteristics therein, to predict areas in the City that may be experiencing elevated energy burden. It examines calculations of energy burden risk through the lens of socio-economic demographic data from the 2015-2019 American Community Survey, as well as comparing the calculated risks to utility consumption from Mass Save's 2020 Massachusetts Residential Customer Profile Study. This paper finds that access to energy efficient housing is not equitably distributed across the City of Boston, and this gap may grow. As regulatory agencies attempt to transition Boston to a low-carbon, sustainable energy future, while the options of technological upgrades and rebates will likely also expand, many of the existing programs and housing options that promote energy efficiency strategies to residential customers are remain inaccessible or infeasible to low-income or tenant households. The City of Boston and State of Massachusetts must take action to close the efficiency and housing quality gaps between low-income households and high-income households, especially in the context of moving forward with carbon free planning.</p>
+Regular seasonal utility costs can pose a crushing burden to many Americans and New Englanders, especially during its cold winters. Due to energy burden's close relationship to the quality of housing and energy inefficiency accessible to low-income households, this paper uses the 2021 City of Boston's Property Assessment dataset, and the detailed property characteristics therein, to predict areas in the City that may be experiencing elevated energy burden. It examines calculations of energy burden risk through the lens of socio-economic demographic data from the 2015-2019 American Community Survey, as well as comparing the calculated risks to utility consumption from Mass Save's 2020 Massachusetts Residential Customer Profile Study. This paper finds that access to energy efficient housing is not equitably distributed across the City of Boston, and this gap may grow.
+***
 
+*This research was conducted in December 2022. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:your@email.com).*
+***
 ## Research Questions
-
+This study explores these key questions:
 - Can areas in Boston facing energy burden be predicted based on the characteristics of their housing?
 - Are these predictions associated with actual increased energy consumption?
-- Where in Boston are they most concentrated?</p>
+- Where in Boston are they most concentrated?
 
-## Data & Methods
+## Data Sources & Methods
+### Data
+The study utilized three main datasets:
+1. CY2021 City of Boston Property Assessment dataset
+   - Contains property details for all unique properties in the city
+   - Working dataset of 133,071 individual residential properties
+   - 79 variables describing property characteristics
 
-### Data Sources & Modifications
+2. Mass Save's 2020 Massachusetts Residential Customer Profile Study
+   - Customer data on electricity consumption and gas consumption at block group level
 
-The CY2021 City of Boston Property Assessment dataset contains property details for all unique properties in the city, commercial and residential. There are 177,091 unique properties identified and 79 variables that describe them in this data set. As this study focuses on residential properties, it is subsetted based on residential properties only. There are a select number of edge cases that pay property taxes to the City of Boston but technically are in surrounding municipalities, which were suppressed from the analysis for clarity reasons. These two changes leave a final working dataset with 133,071 individual properties.
+3. American Community Survey (2015-2019)
+   - Demographic and socioeconomic indicators at block group/census tract levels
 
-#### Latent Variable Construction
-The broad array of detailed information like land use type, location, and information on their physical characteristics makes latent constructs potentially powerful tools in looking at Boston's housing market from a variety of perspectives. This study established a latent variable for Energy Burden Risk Score (EBRS) as the main variable of interest: a scoring mechanism based on four key building characteristics crucial to energy consumption, assessing whether living at this property will increase or decrease the risk of energy burden. Establishing the EBRS measure required defining four new manifest variables at the record level, which scored the contribution of air conditioning access, year built/remodeled, overall property condition, and roof type by each variable's entry contribution to energy burden risk. The process and logic for these four scores is in the Methodology Appendix. These four scores were then combined as a latent construct. Readers familiar with the Property Assessment Dataset may recall that there is a field for heat type (*HEAT_TYPE)*, which could assist in establishing metrics for energy burden or energy efficiency. However, this field was determined to be too incomplete for select property types, and lacking in detail on the actual energy systems in place to be included as a manifest variable in this study. Primarily, while there are entries for electric heat, the greatest number of data in the variable are for Hot Water/Steam, which cannot allow for differentiation between oil, gas, or steam customers, energy sources vary greatly in their energy efficiency and subsequent costs and energy burdens.
+### Methods
+Established a latent variable for Energy Burden Risk Score (EBRS) based on four key building characteristics crucial to energy consumption:
+- Air conditioning access
+- Year built/remodeled
+- Overall property condition
+- Roof type
 
-Energy Burden Risk Score (EBRS) is a latent variable, calculated at the record levek by combining several variables. Learn more about how I calculated this variable by visiting a more detailed page on its construction and background on the logic: 
+EBRS is calculated at the record level by:
+```
+EBRS = (AC Score + Year Score + Condition Score + Roof Score) / Maximum Possible Score
+```
 
-[View Variable Construction](project1_ebrs.md)
-After EBRS was calculated at the record level, average EBRSs were aggregated to both the block group and Census tract level to allow for broader examination with external datasets. Only block groups and census tracts with greater than three observations of EBRS were maintained in the dataset. This excluded several areas in the City, primarily areas with large parks, cemeteries, or golf courses -- like the Arnold Arboretum, Franklin Park, the Boston Common, and Mt. Hope Cemetery.
-
-### External Data
-
-#### Mass Save
-
-Mass Save is a Massachusetts energy efficiency initiative that partners the state's electric and gas utility companies to work with the Massachusetts Department of Energy Resources. The group offers rebates and incentives to customers for energy efficiency improvements on homes and businesses. They also make available the Customer Profile Dashboard, a web-based platform presenting data visualization and extraction of the state's 2020 Customer Profile Study, examining trends in energy consumption and savings. The data's number of households as customers and total electricity consumption and total natural gas consumption was extracted and downloaded at the Block group Level. This was transformed into two new variables merged into to the aggregated Property Assessment dataset, in electricity consumption per household *(kwhperhh)*, and gas consumption per household *(thermsperhh)*.
-
-#### American Community Survey
-
-The Boston Area Research Initiative (BARI) compiles, cleans, and makes available indicators for the American Community Survey at the Block group and Census tract levels. It includes information for the on demographics, race, income, educational attainment, and other household characteristics. ACS indicators from BARI were downloaded for 2015-2019 period and merged into the aggregate level EBRS analysis at the Block group and Census tract level.
+Learn more about how I calculated this variable by visiting a more detailed page on its construction and background on the logic: [View Variable Construction](project1_ebrs.md)
 
 ## Results & Analysis
+### Distribution of EBRS
+The block group with the highest average Energy Burden Risk Score is in Lower Allston (0.8969), followed by Brighton's Oak Square and Franklin Field South in Mattapan (0.89, 0.87, respectively).
 
-### Distribution at Census Block Group Level
-<p>The below table shows the summary statistics of average EBRS by block group. The block group with the highest average Energy Burden Risk Score is in Lower Allston, bound by Interstate-90 and Soldiers Field Road, with 0.8969. The next highest burdens are location in Brighton's Oak Square, then in Franklin Field South, in Mattapan (0.89, 0.87, respectively). The properties that make up these areas have high proportions of single-four family homes, with fewer condominiums and large apartment buildings than areas closer to the center of Boston, which have the lowest average EBRSs. The lowest burdens are in East Boston, near LoPresti Park (0.25), in Back Bay by the Boston Public Library (0.36), as well as in the Seaport (0.42). Most properties in these three block groups are large apartment buildings or condominium units, and in Back Bay and the Seaport, there are no R1-R4 homes.</p>
+The lowest burdens are in:
+- East Boston, near LoPresti Park (0.25)
+- Back Bay by the Boston Public Library (0.36)
+- Seaport (0.42)
 
-<img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" alt="Table 2: Summary Statistics of Average EBRS by Block Group" title="Table 2: Summary Statistics of Average EBRS by Block Group" align="left" hspace="50" vspace="50" width="15%" height="15%">
-
-<p>The summary statistics show that 50% of Census tracts have an average score of less than 0.76, but given the long-left tail, these scores in the lower left tail have a large range. The lower 50% of burden scores are more concentrated closer to the city, in Back Bay, Downtown, and South Boston.</p>
-
-<p>In the upper 50% of scores, these census tracts have a shorter range, and are more concentrated, particularly clustered in value between .76-.80.</p>
+<p> <img src="https://github.com/user-attachments/assets/390de5ee-e2fd-4251-83ef-369d0bf68587" alt="Table 1: Summary Statistics of Average EBRS by Block Group" title="Table 1: Summary Statistics of Average EBRS by Block Group" align="left" hspace="50" vspace="50" width="15%" height="15%"> </p>
 
 <p> Mapping all scores, Figure 1, shows that there are some block groups whose scores are so low that they skew the visual analysis, as seen in the brightest spots in Figure 1. Limiting the map to display scores exclusively above 0.5, in Figure 2, reveals additional variability in its distribution across the city. Some of the highest burdens are clearly clustered in Allston, Hyde Park, South Dorchester, and Mattapan. It appears that moving away from the City's center tends to increase the EBRS, though immediately at the edges of the City limits, such as in the Roslindale and Brighton areas tend to have slightly lower EBRSs than those slightly more central to the City.</p>
 <p>
@@ -54,25 +57,21 @@ The Boston Area Research Initiative (BARI) compiles, cleans, and makes available
 <p> Though neighborhood-level EBRS aggregates were not used in statistical analysis, as block group level analysis has greater specificity and accuracy, Table 3 displays Average EBRS at the neighborhood level for legibility purposes. At the neighborhood level, the highest EBRSs are in Roslindale and Mattapan. These block groups have some of the highest concentrations of energy inefficient properties, mainly older R1-R4 homes. The neighborhoods with lowest EBRSs are in South Boston and in Central (Downtown) Boston.</p>
 <img src = "https://github.com/user-attachments/assets/120faa49-ca39-49cc-9f6a-47d9ccde5b48" width=25% height=25%>
 
+
 ### Correlations and Significance
-<p>To investigate these distributions further, Pearson's r, correlation, was used to measure the strength of the relationships (effect size) between EBRS and demographic variables from ACS data, as well as energy consumption per household statistics from Mass Save. See Table 4.</p>
 
-<img src = "https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560" width=25% height=25%>
-
-<p>Some of the strongest statistically significant positive correlations, where increases in EBRS are associated with increases in the independent variables, are:
-
+Strongest positive correlations with EBRS:
 - Natural gas usage per household (therms)
 - Proportion of buildings with less than five units
 - Proportion of population who are Black
-- Proportion of population have completed high school
+- Proportion of population who have completed high school
 - Proportion of population who have completed some college
 
-Some of the strongest negative correlations with EBRS, where increases in EBRS are associated with decreases in the other variables are:
-
+Strongest negative correlations:
 - Median home value
 - Proportion of residents who have completed a professional degree
-- Median Home Value</p>
 
+<img src = "https://github.com/user-attachments/assets/1bb2ed2f-407b-4ff6-ae04-386ed07a6560" width=25% height=25%>
 ### Bivariate Regression
 
 Given the strength of the EBRS's relationship with gas consumption (*thermsperhh*), it formed the basis of bivariate regression analysis, then multiple regression analysis. Running a regression on the two variables, with EBRS as the dependent variable and therms per household as independent shows that 21% of the variability in average EBRS can be explained by household energy consumption. Figure 3 shows the linear regression plot between average burden and therms consumed per household at the block group level.
@@ -93,35 +92,16 @@ Multiple regression testing was conducted, adding one after another the most str
 
 The Adjusted R2 of the multiple regression shows that approximately 32% of variability in the EBRS can be explained by gas consumption per household, median home value, the proportion of buildings in a block group with less than five units, and the proportion of residents whose maximum education attainment is some college. 
 
+
 ## Discussion
+As seen in the mapping visualizations, areas associated with high income and most numbers of new buildings are scoring low on the EBRS scale. Interestingly, some rapidly gentrifying areas like Jamaica Plain and the South End are in the lower third of EBRSs, likely due to significant new construction.
 
-### Distribution of EBRS
+The distribution of EBRSs alongside gas consumption highlights inequities and confirms EBRS as a predictor of actual energy burden. Low-income households not only suffer from energy invoices taking up a larger proportion of their income but are also more likely to pay higher energy bills due to inherent property inefficiency.
 
-As seen in the mapping visualizations above, as well as the tables, areas associated with high income, and most numbers of new buildings are, unsurprisingly, scoring low on the EBRS scale. Interestingly, some areas that have been noted as the most quickly gentrifying in Boston (Mercado, 2021) are in the lower third of EBRSs – like Jamaica Plain and the South End. I suspect that this is due to the significant number of new construction taking place in these areas. Both of these neighborhoods still show a significant proportion of properties as scoring high EBRSs, but low EBRSs of growing numbers of new buildings are lowering the block group level’s average energy burden. Areas for future research could compare gentrification rates to changes in EBRS across multiple years of property assessment data.![image](https://github.com/user-attachments/assets/200d1b06-6449-45ab-ab80-d5abf450ba29)
-### Relationship with energy consumption
-As discussed at the beginning of this piece, energy burden as an issue encompasses much more than actual energy consumption; it is at the crux of several socioeconomic factors including income, housing quality, and energy efficiency investment. However, knowing the statistical strength of the relationship EBRS has with gas consumption per household is crucial, as the data is confirming that the EBRS has some validity reflected by real world data. Comparing Figure 4 (gas consumption) and Figure 2 (EBRS) is a visual affirmation of this relationship. There did not appear to be a notable strong correlation between the EBRS and average electricity used per household (kwhperhh), r= -0.04. It is important to note that for some customers, especially those with oil heating, when unable to afford filling their tank, are more likely to use plug in electric space heaters, which are very inefficient, and may significantly increase electric load in the wintertime. However, the distribution of electricity consumption across Boston did not appear variable across property types or neighborhoods in any substantive way (Figure 5). I believe that this may be because the number of oil customers, while important, does not make up a majority of households, and average electricity consumption at the CT/BG level gets “smoothed out” _(See ii.a for a brief discussion on the complexities and issues stemming from oil heat)_. Aside from scenarios where space heating is being used, electricity usage to power appliances and lighting alone can remain relatively constant across building types for residential customers and are not as impacted by seasonal patterns as gas usage is. Unless a building has received significant efficiency upgrades or is a new build, electricity consumption is difficult to reduce, and most residential properties have a similar baseload per household. This could look different in rural areas where fewer households have access to natural gas, and larger proportions of families within a block group turn to space heaters in the wintertime.  
+Many properties in Boston, especially triple deckers and brownstones, still have single building-wide heating systems like boilers with radiators, which are more difficult to submeter. This creates complex landlord-tenant dynamics around energy costs and efficiency improvements.
 
-The distribution of EBRSs alongside the distribution of gas consumption highlights some of the additional inequities taking place, and confirms that the EBRS can be a predictor of actual energy burden. A review of consumption for households by housing type shows that households living in large apartment buildings have lower average annual consumption than those in other building types (Eisenberg, 2014). Average consumption per square foot is also highest in small multifamily housing stock – where buildings with 2-5 units, which highlights both an efficiency opportunity, as well as inequity in the burdens that households in these properties face (Eisenberg, 2014). Given that the block groups with the largest energy burdens are mostly comprised of these building types, the EBRS is assigning energy burdens appropriately. Not only do low-income households suffer from energy invoices taking up a larger proportion of their total annual income, but they are also more likely to pay higher energy bills due to the inherent inefficiency of the properties that they can afford renting or owning. 
-
-#### _a. An Aside: Oil Heat_
-Assessing the numbers of households using oil for heat is difficult, given its delivery system; there are many suppliers in the Boston area, and no utility data, so gas was the focus of this study in assessing EBRS. However, for customers with oil heat, of which there are still thousands in Boston, the worry is even larger – though there are regulations in place to protect consumers who receive utility heat and electricity, preventing utility shutoffs between November 15 and March 15, consumers with oil heat are unprotected as they are responsible for filling their own home tanks (“When Am I Protected from Having My Utilities Shut Off”, 2022) . According to the Department of Energy, most of the home heating oil in the United States is used by low-income households in the Northeast (Zhao 2022).  This has significant ramifications for expenditures and burdens because home heating oil and propane prices are higher and tend to rise more sharply than those of other fuels (Zhao 2022). Oil prices are on the rise, on average, 27% more expensive in New England this winter in comparison to 2021 (Moroney, 2022). This October, a gallon of home heating oil in Massachusetts sold on average for $5.71 a gallon. Last year at this time, it was $3.30 a gallon – which equates to a 73% increase (Fortin 2022). Lack of natural gas pipeline infrastructure is less of an issue in Boston than in rural areas, where distribution lines do not extend, but homes constructed in the early 20th century are much more likely to have oil furnaces than any larger buildings, or more recent builds. Recently, natural gas companies have been installing pipelines throughout the Northeast, and campaigns have been launched to encourage conversion from oil to gas. The largest roadblock to the process is the cost of retrofitting oil furnaces. Again, low-income customers are the most likely to be living in these homes but are facing some of the highest cost barriers to reducing their energy bills. According to the City of Chelsea, residents with oil heat are more likely to use electric space heaters in the winter instead of filling their tanks. Hikes in energy prices also increase the danger of households using unsafe methods to heat their homes. This is reflected by the State of Massachusetts winter energy guidance, stating that opening a stove to heat a room can lead to fires and carbon monoxide poisoning (“With Energy Prices Rising, Fire Officials Urge Home Heating Safety”, 2022), and operating electric space heaters are responsible for more than 40% of home fires in the United States (“With Energy Prices” ,2022). In Massachusetts, home heating equipment causes about 1,400 residential fires every winter, and lead to three deaths in 2021 (“With Energy Prices”, 2022).
-
-### Metering and Landlord Incentivization
-<p>Areas in Dorchester, Mattapan, Lower Allston, and Brighton close to Oak Square had some of the highest concentrations of 3-4 family homes across the city. These were some of the highest EBRSs in the city, and showed some of the highest rates of gas usage per household. This source of heat can be expensive for older buildings, they likely have older radiators, and if they aren’t renovated, or well maintained, have old windowpanes and fixtures, they are likely to have heat leakage. </p>
-<p>Electricity is much easier and cheap to submeter, and nearly all apartments have their own electricity meters.  When it comes to heating, many properties in Boston, especially triple deckers and brownstones, still have single building-wide heating systems like boilers with radiators, which are more difficult to submeter. Landlords could invest in upgrades to submeter each apartment but may find it cost prohibitive or inefficient to do so. Therefore, without the ability to see how much each gas each tenant is consuming, landlords pay the utility bill, and try to recoup these costs through rent increases, telling tenants that heat is included in their base rent costs. From an energy conservation standpoint, if energy costs are included in the rent, both tenants and landlords have little incentive to conserve, representing a market failure. What this means for tenants of inefficient buildings with heat-included rents, even if they are not paying monthly utility bills, they could still be facing increased costs due to energy costs being absorbed in the rent. Regardless of this overall cost increase, there are benefits to this for some tenants however, they will be less subject to market fluctuations, and, crucial to the concept of energy burden, on a monthly basis, they will not have to forego spending on other necessities, like food, in order to keep their house warm. It is not implausible that some building owners may try to get ahead of fluctuations in gas pricing and increase rents to amounts greater than the overall utility costs (especially in years like this one). By increasing base rent to account for utility spending, the landlord has no incentive to invest in building efficiency, as the burden of utility consumption gets shifted back to the tenant through rents. </p>
-
-<p>In the scenario that a landlord does invest in submetering heat, and tenants pay for their own utility costs, again, tenants are bearing the costs of utilities (this time much more likely to face energy burden) and the landlord would still have no incentive to invest in general building energy efficiency upgrades.</p>
-
-<p>Policies that encourage the inclusion of energy costs in base rents would be appropriate if having landlords responsible for utilities led to greater efficiency, via investments in energy-efficient construction. However, if investing in individual metering of apartments is their response to challenges associated with higher utility costs, not investing in energy efficiency infrastructure, it will also not lead to greater energy efficiency at these properties. Notably, limiting the analysis to owner occupied properties only would reduce the number of properties and property types too greatly for that to be a valuable way to assess EBRS. One way to examine this relationship and these incentives might be via building permit data, at the incidence of energy efficiency/HVAC upgrades across the city.</p>
-
-<p>Despite these observations about whether heat is included in the rent of tenants or not, the EBRS is still a valid way to signal properties’ inefficiency. We cannot know for certain whether tenants in these buildings are responsible for energy bills. If tenants living in these buildings may not have to pay individual energy invoices themselves, it is likely that the landlord is still charging them for utilities in some way, probably through rental costs. If building owners have no incentive to reduce the energy intensity of their properties since they can recoup costs via rent increases, properties’ EBRS can still have a negative impact on tenants as they may be unable to afford the rent in these buildings.</p>
-
-### Qualifying for Energy Assistance
-To assist families with energy costs and reduce risk of health and safety problems, the Low-Income Home Energy Assistance Program (LIHEAP) provides federally funded assistance to states. While income is not the only factor for qualification in Massachusetts, it is the primary factor (“Learn about Home Energy Assistance”, 2022). Household income cannot exceed 60% of Massachusetts’ estimated State Median Income to be eligible for the program. In 2023, the median income for an individual is $42,411, for a family of two is $55,461, and for a family of four is $81,562 (“Learn about”, 2022). If household income exceeds this threshold, there are other non-profit organizations that provide aid, like the Good Neighbor Energy Fund, where income must be between 60% and 80% of SMI, but these funds are more likely to run out (Zhao, 2022). ![image](https://github.com/user-attachments/assets/d4af18d3-5c07-4d63-b090-b88c9071418d)
-
-See Figure 1, for mapping of Boston’s Median Area Income, by Census Block group from the American Community Survey between 2015-2019. This highlights that qualifying for LIHEAP could be difficult for some Boston households even if they are experiencing energy burden. Many of the areas associated with high EBRSs have incomes that exceed the LIHEAP qualification threshold. Boston’s wages are generally higher than the rest of the state’s, but households are still experiencing poverty due to the corresponding high costs of living in a metropolitan area. 
- 
 ## Conclusion
+
 <p> Beyond the discussion of utility bill affordability, the apparent inequity of energy efficient housing raises questions on the net-zero future of the City of Boston. Issues of equity saturate the transition to a greener energy economy, and the City’s vision for a carbon free Boston by 2050 is at odds with the current state of housing inefficiency. Though large commercial and residential buildings make up a larger proportion of the City’s emissions than smaller scale residential housing, these homes are still significant contributors to emissions – especially those using high-methane fuels like oil, or operating old, inefficient boilers. As certain areas in the City become increasingly efficient, and electrification becomes the new norm, it is crucial that these households are not left behind in the energy transition. Electrifying the grid by incorporating a higher proportion of renewables in producing electricity will raise electricity rates for all customers. And as some high-income areas become more efficient and reduce natural gas consumption, gas prices could see an overall increase as well. For low-income households operating old systems, this could mean their utility bills grow even larger, exacerbating their energy burdens, and widening the income inequality gap further.  </p>
 
 <p> As low-income households are more likely to be tenants rather than owners, and more likely to live in inefficient housing requiring energy efficiency upgrades, any new regulations enforcing the upgrade of old systems to newer technology must ensure that landlords do not shift the cost of such upgrades to tenants, as energy costs are today. </p>
@@ -131,6 +111,20 @@ See Figure 1, for mapping of Boston’s Median Area Income, by Census Block grou
 <p> This study has shown that high energy burdens and inadequate, poorly maintained, and outdated energy technologies are inextricably linked, and not distributed equally across the City. While billing assistance programs like LIHEAP and winter moratoriums on utility shutoffs and evictions are necessary for the survival of many families, they are not enough to address the system issues at play when it comes to housing quality and safety. The relationship between housing quality and energy costs, as well as the inability to move into safer, more efficient housing, signals that there need to be effective, broad regulatory programs to better fit the needs of the community and address these legacies of environmental hazards and energy inefficiency. The information from this study should be used to target particular areas in Boston, homeowners and occupants with information relevant and accessible to the issues they face, accompanied by broad assistance and energy assessments. Integrated energy, health, and housing funding, resources, and engagement must become a priority for City government, potentially as part of their carbon-free initiatives. Environmental improvement cannot take place if significant at risk, low-income, traditionally marginalized communities, already suffering from environmental hazards and inequity, are left out. </p>
 
 
+
+## Policy Recommendations
+1. The City of Boston and State of Massachusetts must take action to close the efficiency and housing quality gaps between low-income households and high-income households
+
+2. Any new regulations enforcing system upgrades must ensure landlords don't shift costs entirely to tenants
+
+3. Need for integrated energy, health, and housing funding as part of carbon-free initiatives
+
+4. Environmental improvement cannot proceed without including traditionally marginalized communities already suffering from environmental hazards
+
+***
+
+*This research was conducted in December 2022. For access to the complete paper, including full statistical analyses and methodology details, please [contact me](mailto:your@email.com).*
+***
 ## References
 <p>Brown, Marilyn A, Anmol Soni, Melissa V Lapsa, Katie Southworth, and Matt Cox. “High Energy Burden and Low-Income Energy Affordability: Conclusions from a Literature Review.” Progress in Energy 2, no. 4 (2020): 042003. https://doi.org/10.1088/2516-1083/abb954. </p>
 
@@ -142,5 +136,3 @@ See Figure 1, for mapping of Boston’s Median Area Income, by Census Block grou
 <p>“When Am I Protected from Having My Utilities Shut off?” Mass.gov. Accessed December 16, 2022. https://www.mass.gov/service-details/when-am-i-protected-from-having-my-utilities-shut-off. </p>
 <p>“With Energy Prices Rising, Fire Officials Urge Home Heating Safety.” Mass.gov. Accessed December 16, 2022. https://www.mass.gov/news/with-energy-prices-rising-fire-officials-urge-home-heating-safety. </p>
 <p>Zhao, Yiwei. “Heating Costs Hit the Highest Level in More than a Decade.” Sampan, November 21, 2022. https://sampan.org/2022/metro/heating-costs-hit-the-highest-level-in-more-than-a-decade/. </p>
-
-
