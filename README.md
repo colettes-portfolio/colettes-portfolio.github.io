@@ -15,13 +15,11 @@ Check out my resume [here](https://github.com/user-attachments/files/17281382/Ba
 
 > "What can you sacrifice at this point?
 >
-> Food." —Sherona Kravits, widow heating her home with oil for 35 years (WCVB Channel 5 Boston, 2022)
+> Food." —S. Kravits, widow heating her home with oil for 35 years (WCVB Channel 5 Boston, 2022)
 >
-> "That probably won't last me until the end of December... If I don't get help, I am going to freeze!" —Elaine Walker, receiving $1,000 in heating assistance but still struggling (WCVB Channel 5 Boston, 2022)
+> "That probably won't last me until the end of December... If I don't get help, I am going to freeze!" —E. Walker, receiving $1,000 in heating assistance but still struggling (WCVB Channel 5 Boston, 2022)
 >
-> "I know people that have to go to other people's house because they don't have any heat, or the oil run out. You can't stay in the house." —Elaine Walker (WCVB Channel 5 Boston, 2022)
->
-> "Once you buy oil, you don't have any money to buy anything else." —Joseph Brooks, 91-year-old Hyde Park resident on social security (CBS Boston, 2022)
+> "Once you buy oil, you don't have any money to buy anything else." —J. Brooks, 91-year-old Hyde Park resident on social security (CBS Boston, 2022)
 
 <table>
 <tr>
