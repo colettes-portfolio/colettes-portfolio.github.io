@@ -64,7 +64,7 @@ Mapped energy burden distribution across Boston to identify areas needing increa
 [View Full Project →](project2.html)
 
 ### 📈 Project 3: Urban Resilience
-Analyzed energy burden evolution from 2017-2022, revealing concerning trends in magnitude and distribution.
+Analyzed energy burden evolution in MA from 2017-2022, revealing its growing magnitude and expanding distribution.
 
 [View Full Project →](project3.html)
 
