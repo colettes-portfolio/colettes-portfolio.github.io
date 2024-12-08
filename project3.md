@@ -33,10 +33,10 @@ Rising energy burdens in Massachusetts, exacerbated by socioeconomic disparities
 
 ### Methods
 *Quantitative Analysis:*
-- Combined estimated fuel consumption with annual energy price data (2017-2022)
+- Combined estimated fuel consumption with monthly (electric + natural gas) and annual (other sources) energy price data (2017-2022)
 - Calculated costs for various energy types including basic electricity service, electric heat, natural gas, oil, wood, bottled gas
 - Created weighted average energy cost per block group based on fuel type proportions
-- Estimated energy burden using: expenditure on utility costs / median household income
+- Estimated energy burden using: expenditure on utility costs / median household income per block group
 
 *Qualitative Analysis:*
 - Interviews with energy assistance professionals
