@@ -23,8 +23,8 @@ Check out my resume [here](https://github.com/user-attachments/files/17281382/Ba
 
 <table>
 <tr>
-<td align="center"><h2 style="color: #cc0000;">73%</h2>Increase in home heating oil costs from $3.30 to $5.70 per gallon (2021-2022)</td>
-<td align="center"><h2 style="color: #cc0000;">64%</h2>Average monthly electricity bill increase (National Grid)</td>
+<td align="center"><h2 style="color: #cc0000;">73%</h2>Increase in home heating oil costs ($3.30 to $5.70 per gallon, 2021-2022)</td>
+<td align="center"><h2 style="color: #cc0000;">64%</h2>Average electricity bill increase (National Grid customers, 2021-2022)</td>
 <td align="center"><h2 style="color: #cc0000;">15%</h2>Estimated % of MA households facing moderate/severe energy burden in 2022</td>
 </tr>
 </table>
