@@ -11,7 +11,7 @@ Regular seasonal utility costs can pose a crushing burden to many Americans and 
 
 ## Research Questions
 This study explores these key questions:
-- Can areas in Boston facing energy burden be predicted based on the characteristics of their housing?
+- How can areas in Boston facing energy burden be predicted based on the characteristics of their housing?
 - Are these predictions associated with actual increased energy consumption?
 - Where in Boston are they most concentrated?
 
