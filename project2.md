@@ -132,7 +132,15 @@ The information from this study should be used to target particular areas in Bos
 ***
 
 ## References
-Brown, Marilyn A, Anmol Soni, Melissa V Lapsa, Katie Southworth, and Matt Cox. “High Energy Burden and Low-Income Energy Affordability: Conclusions from a Literature Review.” Progress in Energy 2, no. 4 (2020): 042003. https://doi.org/10.1088/2516-1083/abb954.
-Eisenberg, Joel Fred. “Weatherization Assistance Program Technical Memorandum Background Data and Statistics on Low-Income Energy Use and Burdens,” 2014. https://doi.org/10.2172/1132973
-Moroney, John. “Heating Worries Mount amid Growing Costs.” NBC Boston. NBC10 Boston, October 21, 2022. https://www.nbcboston.com/news/local/heating-worries-mount-amid-growing-costs/2870216/.
+<p>Brown, Marilyn A, Anmol Soni, Melissa V Lapsa, Katie Southworth, and Matt Cox. “High Energy Burden and Low-Income Energy Affordability: Conclusions from a Literature Review.” Progress in Energy 2, no. 4 (2020): 042003. https://doi.org/10.1088/2516-1083/abb954.</p>
+
+
+<p>Eisenberg, Joel Fred. “Weatherization Assistance Program Technical Memorandum Background Data and Statistics on Low-Income Energy Use and Burdens,” 2014. https://doi.org/10.2172/1132973</p>
+
+<p>“MACustomerProfile - Entities.” n.d. Accessed April 20, 2024. https://insight.dnv.com/MACustomerProfile?_gl=1*1mwa3qc*_ga*MTUyMzI1MDIyNi4xNzA4OTAzODQ4*_ga_DYYE3X0DZL*MTcxMzY0MDY3Mi4xLjEuMTcxMzY0MDY4Ni4wLjAuMA..</p>
+
+<p>Moroney, John. “Heating Worries Mount amid Growing Costs.” NBC Boston. NBC10 Boston, October 21, 2022. https://www.nbcboston.com/news/local/heating-worries-mount-amid-growing-costs/2870216/.</p>
+
+
+
 
